@@ -63,22 +63,24 @@
 				{% if relatedEntries|length %}
 					<div class="row d-flex align-items-stretch">
 						{% for rel in relatedEntries %}
-							<div class="col-md-3">
-								<a href="{{ rel.url }}">
-									{% if rel.imageDeLaPage|length %}
-										{% for image in rel.imageDeLaPage.all() %}
-											<img src="{{ image.getUrl('col3') }}" alt="{{ image.title }}"
-													 width="{{ image.getWidth('col3') }}"
-													 height="{{ image.getHeight('col3') }}">
-										{% endfor %}
-									{% endif %}
-									<div class="listpage__content">
-										<h2>{{ rel.title }}</h2>
-										<div class="text">
-											{{ rel.introductionDeLaPage }}
+							<div class="col-sm-12 col-md-6 col-lg">
+								<div class="card">
+									<a href="{{ rel.url }}">
+										{% if rel.imageDeLaPage|length %}
+											{% for image in rel.imageDeLaPage.all() %}
+												<img src="{{ image.getUrl('col3') }}" alt="{{ image.title }}"
+														 width="{{ image.getWidth('col3') }}"
+														 height="{{ image.getHeight('col3') }}">
+											{% endfor %}
+										{% endif %}
+										<div class="listpage__content">
+											<h2>{{ rel.title }}</h2>
+											<div class="text">
+												{{ rel.introductionDeLaPage }}
+											</div>
 										</div>
-									</div>
-								</a>
+									</a>
+								</div>
 							</div>
 						{% endfor %}
 					</div>
@@ -94,7 +96,7 @@
 				<h1 class="l-title">Destinations</h1>
 				<div class="row">
 					{% for post in posts %}
-						<div class="col-md-4">
+						<div class="col-sm-12 col-md-6 col-lg-4">
 							<a href="{{ post.url }}">
 								{% if post.imageDeLaPage|length %}
 									{% set image = post.imageDeLaPage.one() %}
