@@ -84,7 +84,7 @@
             </a>
             <nav class="site-navigation nav-wrapper">
                 {% set entries = craft.navigation.nodes('mainNavigation').all() %}
-                {% set slugs = craft.request.segments %}
+                {% set slugs = craft.app.request.segments %}
 
                 <ul class="nav">
                     {% nav entry in entries %}

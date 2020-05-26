@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcae40487a59dcac82c6a6e937e6e5fe",
+    "content-hash": "f4033ca13175bf8ad424fce1060c0683",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2318,11 +2318,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f57b646a54ee768248b7aaad4ffe520c0fce860e",
-                "reference": "f57b646a54ee768248b7aaad4ffe520c0fce860e",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/568d8eecb91f13adc82219537d0b16a4749606be",
+                "reference": "568d8eecb91f13adc82219537d0b16a4749606be",
                 "shasum": ""
             },
             "require": {
@@ -2386,7 +2386,7 @@
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support"
             },
-            "time": "2020-05-19T02:41:02+00:00"
+            "time": "2020-05-26T18:01:28+00:00"
         },
         {
             "name": "opis/closure",
@@ -4218,6 +4218,59 @@
             ],
             "description": "Common utilities and building-blocks for Verbb plugins for Craft CMS.",
             "time": "2020-04-14T23:40:29+00:00"
+        },
+        {
+            "name": "verbb/cp-nav",
+            "version": "3.0.12",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/verbb/cp-nav/zipball/66859fe0f31b5ae72bbe40ac7764eda0759af9d4",
+                "reference": "66859fe0f31b5ae72bbe40ac7764eda0759af9d4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.4.0-RC1",
+                "verbb/base": "^1.0.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Control Panel Nav",
+                "handle": "cp-nav",
+                "changelogUrl": "https://raw.githubusercontent.com/verbb/cp-nav/craft-3/CHANGELOG.md",
+                "class": "verbb\\cpnav\\CpNav"
+            },
+            "autoload": {
+                "psr-4": {
+                    "verbb\\cpnav\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Verbb",
+                    "homepage": "http://verbb.io"
+                }
+            ],
+            "description": "Control Panel Nav helps you managing your Control Panel navigation.",
+            "keywords": [
+                "cms",
+                "control panel nav",
+                "control panel navigation",
+                "cp nav",
+                "craft",
+                "craft-plugin",
+                "craftcms"
+            ],
+            "support": {
+                "email": "support@verbb.io",
+                "issues": "https://github.com/verbb/cp-nav/issues?state=open",
+                "source": "https://github.com/verbb/cp-nav",
+                "docs": "https://github.com/verbb/cp-nav",
+                "rss": "https://github.com/verbb/cp-nav/commits/v2.atom"
+            },
+            "time": "2020-04-28T00:53:31+00:00"
         },
         {
             "name": "verbb/navigation",

@@ -334,6 +334,26 @@ section{
         width: 100%;
         height: auto;
     }
+    
+    [class*='col-'] {
+        margin-bottom: 2rem;
+    }
+    
+    .card {
+        height: 100%;
+        
+    
+        .listpage__content {
+            padding: 1rem 0;
+        }
+        
+        a {
+            .listpage__content {
+                padding: 1rem !important;
+            }
+        }
+    }
+    
     a{
         background-color: #FFF;
         display: block;
@@ -347,10 +367,6 @@ section{
             box-shadow: 0px 1px 9px #cdcdcd;
         }
     }
-    &__content{
-        padding: 1em;
-    }
-    
 }
 .destinations, .article {
     a{
@@ -397,7 +413,6 @@ section{
     }
 }
 .hero{
-    padding: 4.5em;
     min-height: 500px;
     text-align: center;
     background-size: cover;
@@ -460,12 +475,20 @@ footer{
         color: #FFF;
         text-decoration: none;
         font-size: 1.125em;
+        
+        &:hover {
+            color: $primary-lighter;
+        }
     }
     ul{
         padding: 0;
     }
     li{
         display: block;
+        
+        & + li {
+          margin-top: .5rem;
+        }
     }
     h2{
         font-size: 0.875em;
@@ -556,6 +579,13 @@ figure{
         position: relative;
     }
     
+    &--sidebar {
+        .article__title h2 {
+            font-size: 1.4rem;
+            padding: 1rem !important;
+        }
+    }
+    
     a {
         position: relative;
     
@@ -626,5 +656,12 @@ figure{
         .nav__link {
             background-color: $primary;
         }
+    }
+}
+
+.news__content {
+    time.l-title {
+        font-size: 0.8rem;
+        font-weight: 600;
     }
 }

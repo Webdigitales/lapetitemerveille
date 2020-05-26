@@ -18,5 +18,7 @@ $(document).ready(function () {
         disable: 'mobile'
     });
 
-    jQuery('header nav').meanmenu();
+    jQuery('header nav').meanmenu({
+        meanScreenWidth: 890
+    });
 });

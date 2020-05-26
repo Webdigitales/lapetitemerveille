@@ -19,7 +19,7 @@
 		<div class="part textimage" data-aos="fade-up">
 			<div class="container-fluid">
 				<div class="row d-flex align-items-stretch">
-					<div class="col-md-6">
+					<div class="col-md-6 order-2 order-md-1">
 						<div class="textimage__content">
 							<h2>{{ block.titreTexteImage }}</h2>
 							<div class="text">
@@ -30,7 +30,7 @@
 									</span>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 order-1 order-md-2">
 						{% for image in block.imagetexteImage.all() %}
 							<img src="{{ image.url('col6') }}" alt="{{ image.title }}"
 									 width="{{ image.getWidth('col6') }}" height="{{ image.getHeight('col6') }}"/>
@@ -92,36 +92,36 @@
 			</div>
 		</div>
 
-
-
-
 	{% elseif block.type == 'colonnesTable' %}
 		<div class="part listpage" data-aos="fade-up">
 			<div class="container-fluid">
 				<h1 class="l-title">{{ block.titreSection }}</h1>
 				<div class="row d-flex align-items-stretch">
 					{% for row in block.colonne %}
-						<div class="col-md-3">
-							<a href="{{ row.boutonColonne.url }}" target="{{ row.boutonColonne.target }}">
-								{% for image in row.imageColonne.all() %}
-									<img src="{{ image.url('col4') }}" alt="{{ image.title }}"
-											 width="{{ image.getWidth('col4') }}"
-											 height="{{ image.getHeight('col4') }}">
-								{% endfor %}
-								<div class="listpage__content">
-									<h2>{{ row.titreColonne }}</h2>
-									<div class="text">
-										{{ row.texteColonne }}
+						<div class="col-sm-12 col-md-6 col-lg">
+							<div class="card">
+								{% if row.boutonColonne|length %}
+								<a href="{{ row.boutonColonne.url }}" target="{{ row.boutonColonne.target }}">
+									{% endif %}
+									{% for image in row.imageColonne.all() %}
+										<img src="{{ image.url('col4') }}" alt="{{ image.title }}"
+												 width="{{ image.getWidth('col4') }}"
+												 height="{{ image.getHeight('col4') }}">
+									{% endfor %}
+									<div class="listpage__content">
+										<h2>{{ row.titreColonne }}</h2>
+										<div class="text">
+											{{ row.texteColonne }}
+										</div>
 									</div>
-								</div>
-							</a>
+									{% if row.boutonColonne|length %}
+								</a>
+								{% endif %}
+							</div>
 						</div>
 					{% endfor %}
 				</div>
 			</div>
 		</div>
-
-
-
 	{% endif %}
 {% endfor %}
