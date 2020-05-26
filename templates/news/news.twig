@@ -1,0 +1,47 @@
+{% extends "_layout" %}
+
+{% block content %}
+<article class="news">
+	<div class="hero"  {% if entry.imageNews | length %}
+	      style="background-image:url(
+	        {% for image in entry.imageNews.all() %}
+				{{ image.getUrl('col12') }}        
+			{% endfor %}
+			)"
+	      {% endif %}>
+		
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-9">
+				<div class="news__content">
+					<time class="l-title" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>  
+					<h1>{{ entry.title }}</h1>
+					<div class="text">
+						{{ entry.texteNews }}
+					</div>
+				</div>
+			</div>
+			<aside class="col-md-3">
+
+				<h2>Autres News</h2>
+				{% for entry in craft.entries.section('news').limit(3) %}
+			    <div>
+			    	{% for image in entry.imageNews.all() %}
+			    	<img src="{{ image.getUrl('col3') }}" alt="{{ image.title }}">
+						        
+					{% endfor %}
+			    	<time class="l-title" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
+			        <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+			    </div>
+				{% endfor %}
+
+			</aside>
+		</div>
+	</div>
+</article>
+	
+
+
+ 
+{% endblock %}

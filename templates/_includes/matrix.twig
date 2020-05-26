@@ -1,0 +1,127 @@
+{% for block in entry.blocs.all() %}
+	{# Bloc du texte centré #}
+	{% if block.type == 'texteCentre' %}
+		<div class="part" data-aos="fade-up">
+			<div class="container-fluid">
+				<div class="textecentre">
+					<h2>{{ block.titreTexteCentre }}</h2>
+					<div class="text">
+						{{ block.texteTexteCentre }}
+					</div>
+					<span class="btn">
+								<a href="{{ block.lienDuBouton }}">{{ block.texteDuBoutonTexteCentre }}</a>
+							</span>
+				</div>
+			</div>
+		</div>
+		{# Bloc Texte + Image #}
+	{% elseif block.type == 'texteImage' %}
+		<div class="part textimage" data-aos="fade-up">
+			<div class="container-fluid">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6">
+						<div class="textimage__content">
+							<h2>{{ block.titreTexteImage }}</h2>
+							<div class="text">
+								{{ block.texteTexteImage }}
+							</div>
+							<span class="btn">
+									{{ block.boutontexteImage|raw }}
+									</span>
+						</div>
+					</div>
+					<div class="col-md-6">
+						{% for image in block.imagetexteImage.all() %}
+							<img src="{{ image.url('col6') }}" alt="{{ image.title }}"
+									 width="{{ image.getWidth('col6') }}" height="{{ image.getHeight('col6') }}"/>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{# Bloc Image + Texte #}
+	{% elseif block.type == 'imageTexte' %}
+		<div class="part textimage" data-aos="fade-up">
+			<div class="container-fluid">
+				<div class="row d-flex align-items-stretch">
+					<div class="col-md-6">
+						{% for image in block.imageImageTexte.all() %}
+							<img src="{{ image.url('col6') }}" alt="{{ image.title }}"
+									 width="{{ image.getWidth('col6') }}" height="{{ image.getHeight('col6') }}"/>
+						{% endfor %}
+					</div>
+					<div class="col-md-6">
+						<div class="textimage__content">
+							<h2>{{ block.titreImageTexte }}</h2>
+							<div class="text">
+								{{ block.texteImageTexte }}
+							</div>
+							<span class="btn">
+									{{ block.bouton|raw }}
+									</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	{% elseif block.type == 'video' %}
+
+		{% set embed = craft.videoEmbedder.getEmbedUrl(block.videoVideo) %}
+
+		{% if embed | length %}
+			<div class="part" data-aos="fade-up">
+				<div class="container-fluid">
+					<div class="videocontainer">
+						<iframe src="{{ embed }}"></iframe>
+					</div>
+				</div>
+			</div>
+
+		{% endif %}
+
+	{% elseif block.type == 'grandeImage' %}
+		<div class="part" data-aos="fade-up">
+			<div class="container-fluid">
+				{% for image in block.grandeimage.all() %}
+					<img src="{{ image.url('col12') }}" alt="{{ image.title }}"
+							 width="{{ image.getWidth('col12') }}" height="{{ image.getHeight('col12') }}">
+				{% endfor %}
+			</div>
+		</div>
+
+
+
+
+	{% elseif block.type == 'colonnesTable' %}
+		<div class="part listpage" data-aos="fade-up">
+			<div class="container-fluid">
+				<h1 class="l-title">{{ block.titreSection }}</h1>
+				<div class="row d-flex align-items-stretch">
+					{% for row in block.colonne %}
+						<div class="col-md-3">
+							<a href="{{ row.boutonColonne.url }}" target="{{ row.boutonColonne.target }}">
+								{% for image in row.imageColonne.all() %}
+									<img src="{{ image.url('col4') }}" alt="{{ image.title }}"
+											 width="{{ image.getWidth('col4') }}"
+											 height="{{ image.getHeight('col4') }}">
+								{% endfor %}
+								<div class="listpage__content">
+									<h2>{{ row.titreColonne }}</h2>
+									<div class="text">
+										{{ row.texteColonne }}
+									</div>
+								</div>
+							</a>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
+
+
+	{% endif %}
+{% endfor %}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language }}">
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+          name="viewport">
+    <link rel="stylesheet" href="https://use.typekit.net/jer6nts.css">
+    <link href="/assets/css/normalize.css" rel="stylesheet">
+    <link href="/assets/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<link rel="stylesheet" href="/assets/css/meanmenu.css" media="all" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="site-wrapper">
+    {{ adminbar({ entry: entry }) }}
+    <div class="site-top-bar top-bar">
+        <div class="container-fluid">
+            <div class="top-bar__content">
+                <ul class="site-languages lang">
+                    {# Create an array with the homepages #}
+                    {% set langSwitcher = craft.app.sites.getAllSites() %}
+                    {% for lang in langSwitcher %}
+                        {# Set homepage as default #}
+                        {% set url = lang.getBaseUrl() %}
+                        {# Entry is defined #}
+                        {% if entry is defined %}
+                            {# Check if that entry exists in other locale #}
+                            {% set otherLocaleEntry = craft.entries.siteId(lang.id).id(entry.id).one() %}
+                            {% if otherLocaleEntry %}
+                                {% set url = otherLocaleEntry.url %}
+                            {% endif %}
+                            {# Category is defined #}
+                        {% elseif category is defined %}
+                            {# Check if that entry exists in other locale #}
+                            {% set otherLocaleCat = craft.categories.siteId(lang.id).id(category.id).one() %}
+                            {% if otherLocaleCat %}
+                                {% set url = otherLocaleCat.url %}
+                            {% endif %}
+                        {% endif %}
+                        <li class="lang__item">
+                            <a href="{{url}}" class="lang__link{% if lang.id == currentSite.id %} is-active{% endif %}">{{lang.language|upper}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+                {#
+                Array of seomatic plugin social links
+                http://lapetitemerveille.local/admin/seomatic/site/social/fr
+                #}
+                {% if seomatic.site.sameAsLinks|length %}
+                    <ul class="site-social social">
+                        {% for key, seomaticSocial in seomatic.site.sameAsLinks %}
+                            {% if seomaticSocial.url|length %}
+                                <li class="social__item item--{{ seomaticSocial.handle }}">
+                                    <a href="{{ seomaticSocial.url }}" class="social__link" target="_blank">
+                                        <svg class="social__icon icon--{{ seomaticSocial.handle }}">
+                                            <use xlink:href="/assets/img/svg-sprite.svg#{{ seomaticSocial.handle }}"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    {% include "_includes/header" %}
+
+    {% block content %}
+    {% endblock %}
+    <section class="partners">
+        <div class="container-fluid">
+            <h1 class='l-title' data-aos="fade-up">Nos partenaires</h1>
+            <ul class="partners__list" data-aos="fade-up" data-aos-delay="100">
+                {% set posts = craft.entries.section('partenaires').all() %}
+                {% for post in posts %}
+                    <li>
+                        <a href="{{ post.lien }}" target="_blank">
+                            {% if post.logo|length %}
+                                {% for image in post.logo.all() %}
+                                    <img src="{{ image.getUrl('logoCrop') }}" alt="{{ image.title }}"
+                                         width="{{ image.getWidth('logoCrop') }}"
+                                         height="{{ image.getHeight('logoCrop') }}">
+
+                                {% endfor %}
+                            {% endif %}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <h1 class="sr-only">Footer</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>{{ "Discover"|t }}</h2>
+										{{ craft.navigation.render('footerNav1', {
+											ulClass: 'nav',
+											liClass: 'nav__item',
+											aClass: 'nav__link',
+											activeClass: 'is-active'
+										}) }}
+                </div>
+                <div class="col-md-3">
+                    <h2>{{ "Universe"|t }}</h2>
+                    {% set posts = craft.entries.section('monde').all() %}
+                    <ul>
+                        {% for post in posts %}
+                            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2>{{ "Infos"|t }}</h2>
+										{{ craft.navigation.render('footerNav2', {
+											ulClass: 'nav',
+											liClass: 'nav__item',
+											aClass: 'nav__link',
+											activeClass: 'is-active'
+										}) }}
+                </div>
+                <div class="col-md-3">
+                    <h2>{{'Newsletter'|t}}</h2>
+                    <p>{{ 'Stay tuned'|t }}</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="/assets/js/vendor/modernizr-3.8.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqc2ee1jZldJcKawRwa6im5FmYeWcg10U&callback=initMap"></script>
+<script src="/assets/js/vendor/jquery.meanmenu.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/assets/js/map.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</body>
+</html> 

@@ -1,0 +1,1 @@
+$(document).ready((function(){$(".hero-home").mousemove((function(e){var o=$(window).width(),n=$(window).height();$(".hero-home img").css({transform:"translate(-"+e.pageX/o*10+"px, -"+e.pageY/n*30+"px)"})}))}));

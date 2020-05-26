@@ -1,0 +1,116 @@
+{% extends "_layout" %}
+{% block content %}
+	{% set featureImage = {
+		mode: 'crop',
+		width: 1440,
+		height: 800,
+		quality: 100
+	} %}
+	{% set heroImageCrop = {
+		mode: 'fit',
+		width: 767,
+		height: 446,
+		quality: 100
+	} %}
+	<section class="hero-home" style="background-image:url({% if entry.imageDeFond|length %}
+		{% for image in entry.imageDeFond.all() %}
+			{{- image.getUrl(featureImage) -}}
+		{% endfor %}
+	{% endif %})">
+		<div class="hero--home__content">
+			{% if entry.imageHero|length %}
+				{% for image in entry.imageHero.all() %}
+					<img src="{{- image.getUrl(heroImageCrop) -}}" alt="">
+				{% endfor %}
+			{% endif %}
+			<h1 class="hero-home__title">
+				<span>{{ entry.titre }}</span>
+				{{ entry.sousTitre }}
+			</h1>
+			<span class="hero-home__date">{{ entry.date }}</span>
+		</div>
+	</section>
+	<div class="content">
+		<section class="introduction">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-md-6 introduction__text">
+						<div class="introduction__content" data-aos="fade-up" data-aos-delay="200">
+							<h1>{{ entry.titleIntro }}</h1>
+							<div class="text">{{ entry.textIntro }}</div>
+							<span class="btn">
+                        {{ entry.bouton|raw }}
+                    </span>
+						</div>
+					</div>
+					<div class="col-md-6 introduction__image">
+						{% if entry.imageIntro|length %}
+							{% for image in entry.imageIntro.all() %}
+								<img src="{{- image.getUrl('col6') -}}" alt="{{ image.title }}"
+										 width="{{ image.getWidth('col6') }}" height="{{ image.getHeight('col6') }}"
+										 data-aos="fade-up">
+
+							{% endfor %}
+						{% endif %}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="listpage" data-aos="fade-up">
+			<div class="container-fluid">
+				<h1 class="l-title">L'expérience Durbuy</h1>
+				{% set relatedEntries = entry.lienVersPage.all() %}
+				{% if relatedEntries|length %}
+					<div class="row d-flex align-items-stretch">
+						{% for rel in relatedEntries %}
+							<div class="col-md-3">
+								<a href="{{ rel.url }}">
+									{% if rel.imageDeLaPage|length %}
+										{% for image in rel.imageDeLaPage.all() %}
+											<img src="{{ image.getUrl('col3') }}" alt="{{ image.title }}"
+													 width="{{ image.getWidth('col3') }}"
+													 height="{{ image.getHeight('col3') }}">
+										{% endfor %}
+									{% endif %}
+									<div class="listpage__content">
+										<h2>{{ rel.title }}</h2>
+										<div class="text">
+											{{ rel.introductionDeLaPage }}
+										</div>
+									</div>
+								</a>
+							</div>
+						{% endfor %}
+					</div>
+				{% endif %}
+			</div>
+		</section>
+		{% set posts = craft.entries()
+			.section('monde')
+			.level('>= 2')
+			.all() %}
+		<section class="destinations" data-aos="fade-up">
+			<div class="container-fluid">
+				<h1 class="l-title">Destinations</h1>
+				<div class="row">
+					{% for post in posts %}
+						<div class="col-md-4">
+							<a href="{{ post.url }}">
+								{% if post.imageDeLaPage|length %}
+									{% set image = post.imageDeLaPage.one() %}
+									<div>
+										<img src="{{ image.getUrl('col6') }}" alt="{{ image.title }}"/>
+									</div>
+								{% endif %}
+								<h2><span>{{ post.title }}</span></h2>
+							</a>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+	</div>
+{% endblock %}
+
+
+
