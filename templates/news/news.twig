@@ -1,47 +1,55 @@
 {% extends "_layout" %}
 
 {% block content %}
-<article class="news">
-	<div class="hero"  {% if entry.imageNews | length %}
-	      style="background-image:url(
-	        {% for image in entry.imageNews.all() %}
-				{{ image.getUrl('col12') }}        
+	<article class="news">
+		<div class="hero" {% if entry.imageNews | length %}
+			style="background-image:url(
+			{% for image in entry.imageNews.all() %}
+				{{ image.getUrl('col12') }}
 			{% endfor %}
-			)"
-	      {% endif %}>
-		
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-9">
-				<div class="news__content">
-					<time class="l-title" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>  
-					<h1>{{ entry.title }}</h1>
-					<div class="text">
-						{{ entry.texteNews }}
+					)"
+				{% endif %}>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="news__content">
+						<time class="l-title"
+									datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
+						<h1>{{ entry.title }}</h1>
+						<div class="text">
+							{{ entry.texteNews }}
+						</div>
 					</div>
 				</div>
+				<aside class="col-lg-3">
+					<h2>Autres News</h2>
+					<div class="row">
+						{% for entry in craft.entries.section('news').id('not ' ~ entry.id).limit(3) %}
+							<div class="col-sm-12 col-md-6 col-lg-12">
+								<article class="article article--sidebar" data-aos="fade-up" data-aos-delay="200">
+									<div class="article__content">
+										<a href="{{ entry.url }}">
+											{% for image in entry.imageNews.all() %}
+												<img src="{{ image.getUrl('col3') }}" alt="{{ image.title }}">
+											{% endfor %}
+											<div class="article__title">
+												<time class="l-title"
+															datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
+												<h2>{{ entry.title }}</h2>
+											</div>
+										</a>
+									</div>
+								</article>
+							</div>
+						{% endfor %}
+					</div>
+				</aside>
 			</div>
-			<aside class="col-md-3">
-
-				<h2>Autres News</h2>
-				{% for entry in craft.entries.section('news').limit(3) %}
-			    <div>
-			    	{% for image in entry.imageNews.all() %}
-			    	<img src="{{ image.getUrl('col3') }}" alt="{{ image.title }}">
-						        
-					{% endfor %}
-			    	<time class="l-title" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
-			        <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
-			    </div>
-				{% endfor %}
-
-			</aside>
 		</div>
-	</div>
-</article>
-	
+	</article>
 
 
- 
+
+
 {% endblock %}
