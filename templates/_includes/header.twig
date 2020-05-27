@@ -106,10 +106,8 @@
                     {% endnav %}
                 </ul>
             </nav>
-					{% if craft.app.language == 'fr' %}
-						<a href="https://booking.lapetitemerveille.be/#!/language/fr" target="_blank" class="booking-btn d-lg-none d-xl-none">{{ 'Tickets'|t }}</a>
-					{% elseif craft.app.language == 'nl' %}
-						<a href="https://booking.lapetitemerveille.be/#!/language/nl" target="_blank" class="booking-btn d-lg-none d-xl-none">{{ 'Tickets'|t }}</a>
+					{% if globalInfos.bookinglink|length %}
+						<a href="{{ globalInfos.bookinglink.url }}" target="{{ globalInfos.bookinglink.target }}" class="booking-btn d-lg-none d-xl-none">{{ globalInfos.bookinglink.text }}</a>
 					{% endif %}
         </div>
     </div>
