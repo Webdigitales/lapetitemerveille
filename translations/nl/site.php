@@ -6,5 +6,7 @@
     'Infos' => 'Infos',
     'Newsletter' => 'Newsletter',
     'Stay tuned' => 'NL Restez branché, inscrivez-vous à notre newsletter',
+    'Subscribe' => "Subscribe",
+    'newsletterPlaceholder' => "Email address",
     'Tickets' => 'Tickets'
   ];

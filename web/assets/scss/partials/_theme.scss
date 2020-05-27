@@ -774,3 +774,49 @@ figure{
     background-color: $primary;
     font-size: 0.8rem;
 }
+
+.js-cm-form {
+    .input-group {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    input, button {
+        height: 48px;
+        border: 0;
+        padding: 0 16px;
+        flex: 0 1 auto;
+        
+        &:focus {
+            outline: 0;
+        }
+    }
+    
+    input {
+        border: 1px solid transparent;
+        transition: border $transition-time;
+        flex: 1 1 auto;
+        
+        &:focus {
+            border: 1px solid $primary-lighter;
+        }
+    }
+    
+    button {
+        background-color: $primary-lighter;
+        color: $primary;
+        text-transform: uppercase;
+        letter-spacing: 0.125rem;
+        font-weight: 600;
+        font-size: 0.8rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        
+        transition: background-color $transition-time;
+        
+        &:hover {
+            color: $white;
+            background-color: $primary;
+        }
+    }
+}
