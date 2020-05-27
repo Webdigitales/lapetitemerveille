@@ -92,7 +92,7 @@ img{
                     .nav__link {
                         padding: 16px 24px;
                         background-color: $primary;
-                        color: $white;
+                        color: $white !important;
                         transition: background-color $transition-time;
                         
                         &:hover {
@@ -111,8 +111,45 @@ img{
                     color: $primary;
                     padding: 16px 0;
                     
+                    transition: color $transition-time;
+                    
                     &.is-active {
                         color: $primary-lighter;
+                        position: relative;
+                        
+                        &:after {
+                            content: '';
+                            height: 3px;
+                            width: 100%;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            background-color: $primary-lighter;
+                            opacity: 1;
+                            visibility: visible;
+                            
+                            transition: all $transition-time;
+                        }
+                        
+                        &:hover {
+                            &:after {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                }
+    
+                &:hover, &:focus {
+                    >.nav__link {
+                        color: $primary-lighter;
+                        
+                        &.is-active {
+                            &:after {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
                     }
                 }
     
@@ -290,6 +327,10 @@ img{
         color: #FFF;
         text-transform: uppercase;
         letter-spacing: 0.125em;
+        font-size: 1.5rem;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 1rem;
     }
 }
 section{
