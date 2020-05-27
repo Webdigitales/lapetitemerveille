@@ -60,6 +60,15 @@ img{
 }
 
 .header{
+    position: sticky;
+    top: 40px;
+    background-color: $white;
+    z-index: 99999;
+    
+    @media (min-width: 1200px) {
+        top: 0;
+    }
+    
     &__content{
         padding: 1em 0;
         display: flex;
@@ -183,10 +192,15 @@ img{
     
     .lang {
         margin: 0;
-        text-align: right;
-        flex: 0 1 auto;
         display: flex;
         align-items: center;
+        padding: 0;
+        flex: 1 1 auto;
+    
+        @media (min-width: 992px) {
+            text-align: right;
+            flex: 0 1 auto;
+        }
         
         &__item {
             display: inline-flex;
@@ -290,14 +304,20 @@ section{
     &__text{
         z-index: 2;
         position: relative;
-        transform: translateX(60px) translateY(45px);
+    
+        @media (min-width: 1200px) {
+            transform: translateX(60px) translateY(45px);
+        }
         
     }
     
     &__image{
-        transform: translateX(-60px);
         z-index: 1;
         position: relative;
+    
+        @media (min-width: 1200px) {
+            transform: translateX(-60px);
+        }
     }
     
     img{
@@ -657,6 +677,17 @@ figure{
             background-color: $primary;
         }
     }
+    
+    .nav__link {
+        &.is-active {
+            color: $primary-lighter;
+        }
+    }
+    
+    .mean-expand {
+        margin: 0 !important;
+        height: 30px !important;
+    }
 }
 
 .news__content {
@@ -664,4 +695,22 @@ figure{
         font-size: 0.8rem;
         font-weight: 600;
     }
+}
+
+.mean-bar {
+    padding: 0 !important;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 99999;
+}
+
+.booking-btn {
+    padding: 16px 24px;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background-color: $primary;
+    font-size: 0.8rem;
 }

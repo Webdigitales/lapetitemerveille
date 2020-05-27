@@ -34,7 +34,7 @@
 		<section class="introduction">
 			<div class="container-fluid">
 				<div class="row align-items-center">
-					<div class="col-md-6 introduction__text">
+					<div class="col-md-6 introduction__text order-2 order-lg-1">
 						<div class="introduction__content" data-aos="fade-up" data-aos-delay="200">
 							<h1>{{ entry.titleIntro }}</h1>
 							<div class="text">{{ entry.textIntro }}</div>
@@ -43,7 +43,7 @@
                     </span>
 						</div>
 					</div>
-					<div class="col-md-6 introduction__image">
+					<div class="col-md-6 introduction__image order-1 order-lg-2">
 						{% if entry.imageIntro|length %}
 							{% for image in entry.imageIntro.all() %}
 								<img src="{{- image.getUrl('col6') -}}" alt="{{ image.title }}"

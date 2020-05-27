@@ -19,6 +19,7 @@ $(document).ready(function () {
     });
 
     jQuery('header nav').meanmenu({
-        meanScreenWidth: 890
+        meanScreenWidth: 991,
+        meanMenuContainer: '.site-wrapper'
     });
 });
