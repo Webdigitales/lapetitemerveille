@@ -580,11 +580,30 @@ figure{
 }
 .partners{
     background-color: #FFF;
+    
     &__list{
-        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        justify-content: center;
         align-items: center;
+        list-style: none;
+        
         li{
-            display: inline-block;
+            flex: 0 1 50%;
+            justify-content: center;
+            
+            a {
+                text-align: center;
+            }
+            
+            @media (min-width: 768px) {
+                flex: 0 1 25%;
+            }
+    
+            @media (min-width: 992px) {
+                flex: 1 1 auto;
+            }
         }
         a{
             display: block;
