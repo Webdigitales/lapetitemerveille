@@ -8,9 +8,11 @@
 					<div class="text">
 						{{ block.texteTexteCentre }}
 					</div>
+					{% if block.lienDuBouton|length %}
 					<span class="btn">
 								<a href="{{ block.lienDuBouton }}">{{ block.texteDuBoutonTexteCentre }}</a>
 							</span>
+					{% endif %}
 				</div>
 			</div>
 		</div>
