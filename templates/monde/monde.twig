@@ -120,8 +120,8 @@
 						{% for pack in packs %}
 							<div class="col-sm-12 col-md-6 col-lg-4">
 								<div class="card">
-									{% if pack.bouton|length %}
-									<a href="{{ pack.bouton.url }}" target="{{ pack.bouton.target }}">
+									{% if pack|length %}
+									<a href="{{ pack.url }}">
 										{% endif %}
 										{% for image in pack.imageDeLaPage.all() %}
 											<img src="{{ image.url('col4') }}" alt="{{ image.title }}"
