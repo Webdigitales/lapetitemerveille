@@ -107,6 +107,44 @@
 			</section>
 			{% endif %}
 
+		{% set packs = entry.pack %}
+		{% if packs|length %}
+			<div class="part listpage" data-aos="fade-up">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col">
+							<h1 class="l-title">{{ 'Packs'|t }}</h1>
+						</div>
+					</div>
+					<div class="row d-flex align-items-stretch">
+						{% for pack in packs %}
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="card">
+									{% if pack.bouton|length %}
+									<a href="{{ pack.bouton.url }}" target="{{ pack.bouton.target }}">
+										{% endif %}
+										{% for image in pack.imageDeLaPage.all() %}
+											<img src="{{ image.url('col4') }}" alt="{{ image.title }}"
+													 width="{{ image.getWidth('col4') }}"
+													 height="{{ image.getHeight('col4') }}">
+										{% endfor %}
+										<div class="listpage__content">
+											<h2>{{ pack.title }}</h2>
+											<div class="text">
+												{{ pack.introductionDeLaPage }}
+											</div>
+										</div>
+										{% if pack.bouton|length %}
+									</a>
+									{% endif %}
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+
 			{% if entry.activityCategory|length %}
 				<section class="site-section section-activity section">
 					<div class="container-fluid">

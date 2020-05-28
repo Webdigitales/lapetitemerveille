@@ -9,5 +9,6 @@
   'persons' => "personnes",
   'Activities' => "Activités",
   'The Worlds' => "Les mondes",
+  'Packs' => "Packs",
   'Tickets' => 'Tickets'
 );
