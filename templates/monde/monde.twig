@@ -82,6 +82,7 @@
 			{% include '_includes/matrix.twig' %}
 
 			{% set areas = craft.entries.section('monde').level(3).descendantOf(entry.id) %}
+			{% if areas|length %}
 			<section class="destinations" data-aos="fade-up">
 				<div class="container-fluid">
 					<h1 class="l-title">{{ 'Areas'|t }}</h1>
@@ -102,6 +103,7 @@
 					</div>
 				</div>
 			</section>
+			{% endif %}
 
 			{% if entry.activityCategory|length %}
 				<section class="site-section section-activity section">
