@@ -164,6 +164,7 @@ img{
                     flex-flow: row wrap;
                     box-shadow: 0 6px 12px rgba(0,0,0,0.175);
                     border-radius: 2px;
+                    width: 180px;
                     
                     opacity: 0;
                     transform: translateY(15px);
@@ -186,7 +187,7 @@ img{
                         flex: 1 1 100%;
     
                         > .nav__link {
-                            font-size: 12px;
+                            font-size: 13px;
                             padding: 16px;
                             background-color: $white;
                             color: $primary;
