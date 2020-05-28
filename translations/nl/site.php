@@ -10,5 +10,6 @@
     'newsletterPlaceholder' => "Email address",
     'persons' => "persons",
     'Activities' => "Activities",
+    'The Worlds' => "De Werelden",
     'Tickets' => 'Tickets'
   ];

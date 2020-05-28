@@ -1,0 +1,27 @@
+{% extends "_layout" %}
+
+{% block content %}
+    <div class="hero" {% if entry.imageDeLaPage | length %}
+        style="background-image:url(
+        {% for image in entry.imageDeLaPage.all() %}
+            {{ image.getUrl('col12') }}
+        {% endfor %}
+                )"
+            {% endif %}>
+        <div class="container-fluid">
+            <h1>{{ entry.title }}</h1>
+        </div>
+    </div>
+		<div class="page-content content">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-8">
+
+					</div>
+					<div class="col-lg-4">
+
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}

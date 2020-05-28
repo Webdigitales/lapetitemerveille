@@ -89,11 +89,11 @@
 		</section>
 		{% set posts = craft.entries()
 			.section('monde')
-			.level('>= 2')
+			.level('3')
 			.all() %}
 		<section class="destinations" data-aos="fade-up">
 			<div class="container-fluid">
-				<h1 class="l-title">Destinations</h1>
+				<h1 class="l-title">{{ 'The Worlds'|t }}</h1>
 				<div class="row">
 					{% for post in posts %}
 						<div class="col-sm-12 col-md-6 col-lg-4">

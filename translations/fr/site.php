@@ -8,5 +8,6 @@
   'newsletterPlaceholder' => "Adresse email",
   'persons' => "personnes",
   'Activities' => "Activités",
+  'The Worlds' => "Les mondes",
   'Tickets' => 'Tickets'
 );

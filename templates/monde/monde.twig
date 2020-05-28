@@ -81,6 +81,28 @@
 
 			{% include '_includes/matrix.twig' %}
 
+			{% set areas = craft.entries.section('monde').level(3).descendantOf(entry.id) %}
+			<section class="destinations" data-aos="fade-up">
+				<div class="container-fluid">
+					<h1 class="l-title">{{ 'Areas'|t }}</h1>
+					<div class="row">
+						{% for area in areas %}
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<a href="{{ area.url }}">
+									{% if area.imageDeLaPage|length %}
+										{% set image = area.imageDeLaPage.one() %}
+										<div>
+											<img src="{{ image.getUrl('col6') }}" alt="{{ image.title }}"/>
+										</div>
+									{% endif %}
+									<h2><span>{{ area.title }}</span></h2>
+								</a>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</section>
+
 			{% if entry.activityCategory|length %}
 				<section class="site-section section-activity section">
 					<div class="container-fluid">
