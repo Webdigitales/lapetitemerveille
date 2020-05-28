@@ -903,3 +903,24 @@ figure{
         }
     }
 }
+
+.site-section {
+    .text-left {
+        text-align: left !important;
+    }
+    
+    .activity {
+        padding: 0;
+    }
+    
+    .section__title {
+        margin: 0 0 2rem 0 !important;
+    }
+    
+    &.section-activity {
+        .category-list {
+            padding: 0;
+            list-style: none;
+        }
+    }
+}

@@ -7,5 +7,6 @@
   'Subscribe' => "S'abonner",
   'newsletterPlaceholder' => "Adresse email",
   'persons' => "personnes",
+  'Activities' => "Activités",
   'Tickets' => 'Tickets'
 );

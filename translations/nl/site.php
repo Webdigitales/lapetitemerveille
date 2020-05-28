@@ -9,5 +9,6 @@
     'Subscribe' => "Subscribe",
     'newsletterPlaceholder' => "Email address",
     'persons' => "persons",
+    'Activities' => "Activities",
     'Tickets' => 'Tickets'
   ];

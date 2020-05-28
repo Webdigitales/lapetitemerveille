@@ -78,7 +78,45 @@
 					</div>
 				</div>
 			</div>
+
 			{% include '_includes/matrix.twig' %}
+
+			{% if entry.activityCategory|length %}
+				<section class="site-section section-activity section">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col">
+								<h2 class="section__title l-title text-left">{{ 'Activities'|t }}</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								{# Display the categories #}
+								<ul class="activity-list category-list list row d-flex align-items-stretch">
+									{% for category in entry.activityCategory %}
+										<li class="list__item col-sm-12 col-md-6 col-lg-3">
+											<section class="activity">
+												<div class="image-wrapper">
+													{% if category.imageDeLaPage|length %}
+														{% for image in category.imageDeLaPage.all() %}
+															<img src="{{- image.getUrl('col6') -}}" alt="{{ image.title }}"
+																	 width="{{ image.getWidth('col6') }}"
+																	 height="{{ image.getHeight('col6') }}"
+																	 class="activity__image image img-fluid">
+														{% endfor %}
+													{% endif %}
+												</div>
+												<h3 class="activity__title title">{{ category.title }}</h3>
+											</section>
+										</li>
+									{% endfor %}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+			{% endif %}
+
 			{% if entry.latitude|length %}
 				<div id="map"></div>
 				<script>
