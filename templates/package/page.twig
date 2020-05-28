@@ -1,27 +1,67 @@
 {% extends "_layout" %}
 
 {% block content %}
-    <div class="hero" {% if entry.imageDeLaPage | length %}
-        style="background-image:url(
-        {% for image in entry.imageDeLaPage.all() %}
-            {{ image.getUrl('col12') }}
-        {% endfor %}
-                )"
-            {% endif %}>
-        <div class="container-fluid">
-            <h1>{{ entry.title }}</h1>
-        </div>
-    </div>
-		<div class="page-content content">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-8">
-
-					</div>
-					<div class="col-lg-4">
-
-					</div>
+	<div class="hero" {% if entry.imageDeLaPage | length %}
+		style="background-image:url(
+		{% for image in entry.imageDeLaPage.all() %}
+			{{ image.getUrl('col12') }}
+		{% endfor %}
+				)"
+			{% endif %}>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h1>{{ entry.title }}</h1>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="page content">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-7">
+					<main role="main" class="page__section content__main main" data-aos="fade-up">
+						{% if entry.introductionDeLaPage|length %}
+							<p class="l-intro">
+								{{ entry.introductionDeLaPage }}
+							</p>
+						{% endif %}
+
+						{% if entry.texteNews|length %}
+							{{ entry.texteNews }}
+						{% endif %}
+						{#{% if entry.gallery|length %}
+							{{ entry.gallery }}
+						{% endif %}#}
+					</main>
+				</div>
+				<div class="col-lg-4 offset-lg-1">
+					<aside class="page__section content__sidebar sidebar" data-aos="fade-up" data-delay="200">
+						<div class="sidebar__header">
+							{% if entry.imageNews|length %}
+								{% for image in entry.imageNews.all() %}
+									<img src="{{ image.url('col4') }}" alt="{{ image.title }}"
+											 width="{{ image.getWidth('col4') }}"
+											 height="{{ image.getHeight('col4') }}"
+											 class="img-fluid">
+								{% endfor %}
+							{% endif %}
+						</div>
+						<div class="sidebar__content">
+							{% if entry.texte|length %}
+								{{ entry.texte }}
+							{% endif %}
+							{% if entry.bouton|length %}
+								<a href="{{ entry.bouton.url }}"
+									 target="{{ entry.bouton.target }}"
+									 class="btn btn-primary">
+									{{ entry.bouton.text }}
+								</a>
+							{% endif %}
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

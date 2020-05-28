@@ -926,3 +926,89 @@ figure{
         }
     }
 }
+
+.page {
+    padding: 4rem 0;
+    
+    .page__section {
+        background-color: $white;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        border-radius: 3px;
+    
+        ul {
+            li + li {
+                margin-top: .5rem;
+            }
+        
+            & + .btn, & + p {
+                margin-top: 2rem;
+            }
+        }
+    
+        a:not(.btn) {
+            color: $primary;
+        
+            transition: color $transition-time;
+        
+            &:hover {
+                color: $primary-lighter;
+            }
+        }
+        
+        &.content__main {
+            padding: 2rem;
+            
+            ul, p, img {
+                & + h2, & + h3, & + h4 {
+                    margin-top: 3rem;
+                }
+            }
+        }
+        
+        &.sidebar {
+          overflow: hidden;
+            margin-top: 2rem;
+            
+            @media (min-width: 1200px) {
+                margin-top: 0;
+            }
+            
+            .sidebar__content {
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.btn {
+    &.btn-primary {
+        background-color: $primary;
+        color: $white;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        letter-spacing: .125rem;
+        font-size: .825rem;
+        text-transform: uppercase;
+        text-align: center;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        transition: background-color $transition-time;
+        
+        &:hover {
+            background-color: $primary-lighter;
+        }
+    }
+    
+    &.btn-fluid {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.l-intro {
+    font-size: 1.125rem;
+    line-height: 1.6rem;
+}
