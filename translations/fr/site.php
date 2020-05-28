@@ -6,5 +6,6 @@
   'Stay tuned' => 'Restez branché, inscrivez-vous à notre newsletter',
   'Subscribe' => "S'abonner",
   'newsletterPlaceholder' => "Adresse email",
+  'persons' => "personnes",
   'Tickets' => 'Tickets'
 );

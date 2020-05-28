@@ -1,61 +1,97 @@
 {% extends "_layout" %}
 
 {% block content %}
-    <div class="hero" {% if entry.imageDeLaPage | length %}
-        style="background-image:url(
-        {% for image in entry.imageDeLaPage.all() %}
-            {{ image.getUrl('col12') }}
-        {% endfor %}
-                )"
-            {% endif %}>
-        <div class="container-fluid">
-            <h1>{{ entry.title }}</h1>
-        </div>
-    </div>
-    <div class="content">
-        {% if entry.pageParent %}
-        <div class="destinations" data-aos="fade-up">
-            <div class="part">
-                {% set entries = craft.entries.section('monde').level(2).descendantOf(entry.id) %}
-                <div class="container-fluid">
-                    <div class="row">
-                        {% for entry in entries %}
-                            <div class="col-md-4">
-                                <a href="{{ entry.url }}">
-                                    {% if entry.imageDeLaPage|length %}
-                                        {% for image in entry.imageDeLaPage .all() %}
-                                            <img src="{{- image.getUrl('col4') -}}" alt="{{ image.title }}"
-                                                 width="{{ image.getWidth('col6') }}"
-                                                 height="{{ image.getHeight('col6') }}">
+	<div class="hero" {% if entry.imageDeLaPage | length %}
+		style="background-image:url(
+		{% for image in entry.imageDeLaPage.all() %}
+			{{ image.getUrl('col12') }}
+		{% endfor %}
+				)"
+			{% endif %}>
+		<div class="container-fluid">
+			<h1>{{ entry.title }}</h1>
+		</div>
+	</div>
+	<div class="content">
+		{% if entry.pageParent %}
+			<div class="destinations" data-aos="fade-up">
+				<div class="part">
+					{% set entries = craft.entries.section('monde').level(2).descendantOf(entry.id) %}
+					<div class="container-fluid">
+						<div class="row">
+							{% for entry in entries %}
+								<div class="col-md-4">
+									<a href="{{ entry.url }}">
+										{% if entry.imageDeLaPage|length %}
+											{% for image in entry.imageDeLaPage .all() %}
+												<img src="{{- image.getUrl('col4') -}}" alt="{{ image.title }}"
+														 width="{{ image.getWidth('col6') }}"
+														 height="{{ image.getHeight('col6') }}">
 
-                                        {% endfor %}
-                                    {% endif %}
-                                    <h2><span>{{ entry.title }}</span></h2>
-                                </a>
-                            </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% else %}
-				{% include '_includes/matrix.twig' %}
-
-            </div>
-            {% if entry.latitude|length %}
-                <div id="map"></div>
-                <script>
-                    var destination = {lat: {{ entry.latitude }}, lng: {{ entry.longitude }}};
-                    var contentString =
-                        '<div id="content">' +
-                        '<h1 id="firstHeading" class="firstHeading">{{ entry.title }}</h1>' +
-                        '<p>{{ entry.rue }}</p>' +
-                        '<p>{{ entry.codePostal }}</p>' +
-                        '</div>';
-
-                </script>
-            {% endif %}
-        {% endif %}
-    </div>
+											{% endfor %}
+										{% endif %}
+										<h2><span>{{ entry.title }}</span></h2>
+									</a>
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		{% else %}
+			<div class="top-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col">
+							<ul class="top-content__infos list">
+								{% if entry.date|length %}
+									<li class="list__item">
+										<svg class="icon icon--calenar">
+											<use xlink:href="/assets/img/svg-sprite.svg#calendar"></use>
+										</svg>
+										<span class="infos__text">{{ entry.date }}</span>
+									</li>
+								{% endif %}
+								{% if entry.transport|length %}
+									<li class="list__item">
+										<svg class="icon icon--train">
+											<use xlink:href="/assets/img/svg-sprite.svg#train"></use>
+										</svg>
+										<span class="infos__text">{{ entry.transport }}</span>
+									</li>
+								{% endif %}
+								{% if entry.capacity|length %}
+									<li class="list__item">
+										<svg class="icon icon--users">
+											<use xlink:href="/assets/img/svg-sprite.svg#users"></use>
+										</svg>
+										<span class="infos__text">{{ entry.capacity }} {{ 'persons'|t }}</span>
+									</li>
+								{% endif %}
+								{% if globalInfos.bookinglink|length %}
+									<li class="list__item item--button">
+										<a href="{{ globalInfos.bookinglink.url }}" target="{{ globalInfos.bookinglink.target }}" class="btn btn-primary">{{ globalInfos.bookinglink.text }}</a>
+									</li>
+								{% endif %}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% include '_includes/matrix.twig' %}
+			{% if entry.latitude|length %}
+				<div id="map"></div>
+				<script>
+						var destination = {lat: {{ entry.latitude }}, lng: {{ entry.longitude }}};
+						var contentString =
+								'<div id="content">' +
+								'<h1 id="firstHeading" class="firstHeading">{{ entry.title }}</h1>' +
+								'<p>{{ entry.rue }}</p>' +
+								'<p>{{ entry.codePostal }}</p>' +
+								'</div>';
+				</script>
+			{% endif %}
+		{% endif %}
+	</div>
 {% endblock %}
 
