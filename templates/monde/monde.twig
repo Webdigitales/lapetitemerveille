@@ -39,6 +39,7 @@
 				</div>
 			</div>
 		{% else %}
+		{% if entry.date|length or entry.transport|length or entry.capacity|length %}
 			<div class="top-content">
 				<div class="container-fluid">
 					<div class="row">
@@ -78,6 +79,7 @@
 					</div>
 				</div>
 			</div>
+			{% endif %}
 
 			{% include '_includes/matrix.twig' %}
 
