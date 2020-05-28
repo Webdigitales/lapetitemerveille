@@ -59,5 +59,5 @@ gulp.task('watch', function(){
     });
 
     gulp.watch('./assets/scss/**/*.scss', ['sass-watch']);
-    gulp.watch(['./assets/css/style.css', '../templates/**/*.html.twig', './assets/js/*.js'], ['browsersync-reload']);
+    gulp.watch(['./assets/css/style.css', '../templates/**/*.twig', './assets/js/*.js'], ['browsersync-reload']);
 });
