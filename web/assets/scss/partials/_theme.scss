@@ -337,7 +337,15 @@ img {
 }
 
 section {
-    padding: 4.5em 0;
+    padding: 6rem 0;
+    
+    & + section {
+        padding-top: 0;
+    }
+    
+    &.listpage {
+        padding-bottom: 4rem;
+    }
 }
 
 .introduction {
@@ -1042,4 +1050,69 @@ figure {
 .l-intro {
     font-size: 1.125rem;
     line-height: 1.6rem;
+}
+
+.steps {
+    padding-top: 4rem;
+    padding-bottom: 0;
+    
+    .steps__title {
+        margin-bottom: 4rem;
+    }
+    
+    [class*='col-'] {
+        @media (max-width: 1200px) {
+            margin-bottom: 2rem;
+        }
+    }
+    
+    .step {
+        padding: 0;
+        text-align: center;
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        
+        .step__content {
+            flex: 1 1 auto;
+        }
+        
+        .step__number {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $white;
+            border-radius: 50%;
+            height: 64px;
+            width: 64px;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+            background-color: $primary;
+        }
+        
+        .step__title {
+            margin-bottom: 0;
+        }
+        
+        .step__footer {
+            a {
+                padding: 1rem 2rem;
+                font-size: .825rem;
+                letter-spacing: .125rem;
+                color: $white;
+                font-weight: 600;
+                text-transform: uppercase;
+                text-decoration: none;
+                background-color: $primary;
+                margin-top: 1rem;
+                display: inline-block;
+                
+                transition: background-color $transition-time;
+                
+                &:hover {
+                    background-color: $primary-lighter;
+                }
+            }
+        }
+    }
 }

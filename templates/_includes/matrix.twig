@@ -125,5 +125,48 @@
 				</div>
 			</div>
 		</div>
+
+	{% elseif block.type == 'steps' %}
+		<section class="part steps" data-aos="fade-up">
+			<div class="container-fluid">
+				{% if block.sectionTitle|length %}
+					<div class="row">
+						<div class="col">
+							<h1 class="steps__title l-title">{{ block.sectionTitle }}</h1>
+						</div>
+					</div>
+				{% endif %}
+				<div class="row d-flex align-items-stretch">
+					{% for key, step in block.step %}
+						{% set key = key + 1 %}
+						<div class="col-sm-12 col-md">
+							<section class="steps__item step step--{{ key }}" data-aos="fade-up" data-aos-delay="{{ 200 + key * 100 }}">
+								<div class="card__header">
+									<span class="step__number">
+										{{ key }}
+									</span>
+									{% if step.stepTitle|length %}
+										<h2 class="step__title">
+											{{ step.stepTitle }}
+										</h2>
+									{% endif %}
+								</div>
+								{% if step.steptext|length %}
+									<div class="step__content">
+										{{ step.steptext|raw }}
+									</div>
+								{% endif %}
+								{% if step.stepButton|length %}
+									<div class="step__footer">
+										{{ step.stepButton|raw }}
+									</div>
+								{% endif %}
+							</section>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+
 	{% endif %}
 {% endfor %}
