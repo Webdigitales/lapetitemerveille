@@ -26,9 +26,32 @@
 								{{ entry.introductionDeLaPage }}
 							</p>
 						{% endif %}
-
 						{% if entry.texteNews|length %}
 							{{ entry.texteNews }}
+						{% endif %}
+						{% if entry.tickets %}
+							<section class="tickets">
+								<h2 class="tickets__title">{{ 'Tickets'|t }}</h2>
+								<ul class="tickets__list list">
+									{% for ticket in entry.tickets  %}
+										<li class="list__item">
+											<section class="ticket">
+												<div class="col-8">
+													<h3 class="ticket__title">{{ ticket.ticketTitle }}</h3>
+													<div class="ticket__content">
+														{{ ticket.description }}
+													</div>
+												</div>
+												<div class="col-4">
+													<div class="ticket__price">
+														{{ ticket.price }}
+													</div>
+												</div>
+											</section>
+										</li>
+									{% endfor %}
+								</ul>
+							</section>
 						{% endif %}
 						{#{% if entry.gallery|length %}
 							{{ entry.gallery }}
