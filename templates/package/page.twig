@@ -37,16 +37,22 @@
 										<li class="list__item">
 											<section class="ticket">
 												<div class="col-8">
-													<h3 class="ticket__title">{{ ticket.ticketTitle }}</h3>
-													<div class="ticket__content">
-														{{ ticket.description }}
-													</div>
+													{% if ticket.ticketTitle|length %}
+														<h3 class="ticket__title">{{ ticket.ticketTitle }}</h3>
+													{% endif %}
+													{% if ticket.description|length %}
+														<div class="ticket__content">
+															{{ ticket.description }}
+														</div>
+													{% endif %}
 												</div>
-												<div class="col-4">
-													<div class="ticket__price">
-														{{ ticket.price }}
+												{% if ticket.price|length %}
+													<div class="col-4">
+														<div class="ticket__price">
+															{{ ticket.price }}
+														</div>
 													</div>
-												</div>
+												{% endif %}
 											</section>
 										</li>
 									{% endfor %}
