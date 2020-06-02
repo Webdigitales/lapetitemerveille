@@ -12,5 +12,6 @@
     'Activities' => "Activities",
     'The Worlds' => "De Werelden",
     'Packs' => "Packs",
+    'Accommodations' => "Accommodations",
     'Tickets' => 'Tickets'
   ];

@@ -10,5 +10,6 @@
   'Activities' => "Activités",
   'The Worlds' => "Les mondes",
   'Packs' => "Packs",
+  'Accommodations' => "Logements",
   'Tickets' => 'Tickets'
 );
