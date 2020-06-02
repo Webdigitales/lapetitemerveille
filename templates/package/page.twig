@@ -11,6 +11,16 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col">
+					{% if entry.logo|length %}
+						{% for image in entry.logo.all() %}
+							<div class="logo-wrapper">
+								<img src="{{ image.getUrl('logoCrop') }}" alt="{{ image.title }}"
+										 width="{{ image.getWidth('logoCrop') }}"
+										 height="{{ image.getHeight('logoCrop') }}"
+										 class="logo">
+							</div>
+						{% endfor %}
+					{% endif %}
 					<h1>{{ entry.title }}</h1>
 				</div>
 			</div>
