@@ -9,9 +9,19 @@
 				)"
 			{% endif %}>
 		<div class="container-fluid">
+			{% if entry.logo|length %}
+				{% for image in entry.logo.all() %}
+					<div class="logo-wrapper">
+						<img src="{{ image.getUrl('logoCrop') }}" alt="{{ image.title }}"
+								 width="{{ image.getWidth('logoCrop') }}"
+								 height="{{ image.getHeight('logoCrop') }}"
+								 class="logo">
+					</div>
+				{% endfor %}
+			{% endif %}
 			<h1>{{ entry.title }}</h1>
 		</div>
-	</div>
+	</div>_
 	<div class="content">
 		{% if entry.pageParent %}
 			<div class="destinations" data-aos="fade-up">
