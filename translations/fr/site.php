@@ -9,7 +9,7 @@
   'persons' => "personnes",
   'Activities' => "Activités",
   'The Worlds' => "Les mondes",
-  'Packs' => "Packs",
+  'Packs' => "Logements",
   'Accommodations' => "Logements",
   'Tickets' => 'Tickets'
 );

@@ -11,7 +11,7 @@
     'persons' => "persons",
     'Activities' => "Activities",
     'The Worlds' => "De Werelden",
-    'Packs' => "Packs",
+    'Packs' => "Accommodations",
     'Accommodations' => "Accommodations",
     'Tickets' => 'Tickets'
   ];
