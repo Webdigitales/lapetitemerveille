@@ -6,7 +6,6 @@
   'Stay tuned' => 'Restez branché, inscrivez-vous à notre newsletter',
   'Subscribe' => "S'abonner",
   'newsletterPlaceholder' => "Adresse email",
-  'persons' => "personnes",
   'Activities' => "Activités",
   'The Worlds' => "Les mondes",
   'Packs' => "Logements",
