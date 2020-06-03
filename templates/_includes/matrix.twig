@@ -168,5 +168,32 @@
 			</div>
 		</section>
 
+	{% elseif block.type == 'faqs' %}
+		<div class="part faqs" data-aos="fade-up">
+			<div class="container-fluid">
+				<div class="row d-flex align-items-stretch">
+					{% for key, faq in block.faq %}
+						{% set key = key + 1 %}
+						<div class="col-sm-12 col-md-8 offset-md-2">
+							<div class="faqs__item faq faq--{{ key }}" data-aos="fade-up" data-aos-delay="{{ 200 + key * 100 }}">
+								<div class="card__header">
+									{% if faq.faqTitle|length %}
+										<h2 class="faq__title">
+											{{ faq.faqTitle }}
+										</h2>
+									{% endif %}
+								</div>
+								{% if faq.faqText|length %}
+									<div class="faq__content">
+										{{ faq.faqText|raw }}
+									</div>
+								{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+
 	{% endif %}
 {% endfor %}
