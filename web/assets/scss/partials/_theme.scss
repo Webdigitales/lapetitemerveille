@@ -565,6 +565,10 @@ section {
 
 .part {
     padding: 3em 0;
+    
+    & + .part {
+        padding-top: 0;
+    }
 }
 
 .textimage {
