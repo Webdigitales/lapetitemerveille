@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="/assets/css/meanmenu.css" media="all"/>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href="/assets/css/styles.css" rel="stylesheet">
+	{% do seomatic.script.get('googleTagManager').include(true) %}
 </head>
 <body>
 {% do seomatic.script.get('googleTagManager').include(true) %}
