@@ -29,9 +29,15 @@ return [
     ],
 
     // Dev environment settings
-    'dev' => [
+    'local' => [
         // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
         'devMode' => true,
+    ],
+
+    // Dev environment settings
+    'dev' => [
+        // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
+        'devMode' => false,
     ],
 
     // Staging environment settings
