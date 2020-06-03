@@ -357,6 +357,11 @@ section {
     }
 }
 
+.listpage + .part {
+    padding-top: 0;
+    padding-bottom: 7rem;
+}
+
 .introduction {
     &__content {
         background-color: #FFF;
