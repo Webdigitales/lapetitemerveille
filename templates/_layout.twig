@@ -24,6 +24,7 @@
 	<link href="/assets/css/styles.css" rel="stylesheet">
 </head>
 <body>
+{% do seomatic.script.get('googleTagManager').include(true) %}
 <div class="site-wrapper">
 	{{ adminbar({ entry: entry }) }}
 	<div class="site-top-bar top-bar">
