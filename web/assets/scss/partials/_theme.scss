@@ -333,6 +333,10 @@ img {
         font-size: 3em;
         letter-spacing: 0.125em;
         margin-bottom: 0.1em;
+        
+        @media (max-width: 992px) {
+            font-size: 2em;
+        }
     }
     
     img {
