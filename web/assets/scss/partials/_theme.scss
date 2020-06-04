@@ -547,6 +547,10 @@ section {
         text-transform: uppercase;
         font-size: 3.375em;
         letter-spacing: 0.125em;
+        
+        @media (max-width: 992px) {
+            font-size: 2em;
+        }
     }
 }
 
