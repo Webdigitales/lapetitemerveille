@@ -335,7 +335,7 @@ img {
         margin-bottom: 0.1em;
         
         @media (max-width: 992px) {
-            font-size: 2em;
+            font-size: 2.2em;
         }
     }
     
@@ -526,6 +526,10 @@ section {
     align-items: center;
     position: relative;
     
+    @media (max-width: 992px) {
+        min-height: 400px;
+    }
+    
     &:before {
         content: '';
         display: block;
@@ -549,7 +553,7 @@ section {
         letter-spacing: 0.125em;
         
         @media (max-width: 992px) {
-            font-size: 2em;
+            font-size: 2.2em;
         }
     }
 }
