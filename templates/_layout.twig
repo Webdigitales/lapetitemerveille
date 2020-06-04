@@ -29,6 +29,25 @@
 	<div class="site-top-bar top-bar">
 		<div class="container-fluid">
 			<div class="top-bar__content">
+				{#
+				Array of seomatic plugin social links
+				http://lapetitemerveille.local/admin/seomatic/site/social/fr
+				#}
+				{% if seomatic.site.sameAsLinks|length %}
+					<ul class="site-social social">
+						{% for key, seomaticSocial in seomatic.site.sameAsLinks %}
+							{% if seomaticSocial.url|length %}
+								<li class="social__item item--{{ seomaticSocial.handle }}">
+									<a href="{{ seomaticSocial.url }}" class="social__link" target="_blank">
+										<svg class="social__icon icon--{{ seomaticSocial.handle }}">
+											<use xlink:href="/assets/img/svg-sprite.svg#{{ seomaticSocial.handle }}"></use>
+										</svg>
+									</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				{% endif %}
 				<ul class="site-languages lang">
 					{# Create an array with the homepages #}
 					{% set langSwitcher = craft.app.sites.getAllSites() %}
@@ -56,25 +75,6 @@
 						</li>
 					{% endfor %}
 				</ul>
-				{#
-				Array of seomatic plugin social links
-				http://lapetitemerveille.local/admin/seomatic/site/social/fr
-				#}
-				{% if seomatic.site.sameAsLinks|length %}
-					<ul class="site-social social">
-						{% for key, seomaticSocial in seomatic.site.sameAsLinks %}
-							{% if seomaticSocial.url|length %}
-								<li class="social__item item--{{ seomaticSocial.handle }}">
-									<a href="{{ seomaticSocial.url }}" class="social__link" target="_blank">
-										<svg class="social__icon icon--{{ seomaticSocial.handle }}">
-											<use xlink:href="/assets/img/svg-sprite.svg#{{ seomaticSocial.handle }}"></use>
-										</svg>
-									</a>
-								</li>
-							{% endif %}
-						{% endfor %}
-					</ul>
-				{% endif %}
 			</div>
 		</div>
 	</div>

@@ -243,9 +243,10 @@ img {
         align-items: center;
         padding: 0;
         flex: 1 1 auto;
+        text-align: right;
+        justify-content: flex-end;
         
         @media (min-width: 992px) {
-            text-align: right;
             flex: 0 1 auto;
         }
         
@@ -272,18 +273,18 @@ img {
                 text-transform: uppercase;
                 font-size: 0.875em;
                 font-weight: 600;
-                color: $primary;
                 transition: color $transition-time;
+                color: #222222;
                 
                 &:hover, &.is-active {
-                    color: $primary-lighter;
+                    color: $primary;
                 }
             }
         }
     }
     
     .social {
-        margin-left: 2em;
+        margin: 0 2rem 0 0;
         padding: 0;
         display: inline-flex;
         align-items: center;
@@ -306,12 +307,12 @@ img {
             margin: 0 0.3em;
             
             .social__icon {
-                fill: $primary;
+                fill: #222222;
             }
             
             &:hover {
                 .social__icon {
-                    fill: $primary-lighter;
+                    fill: $primary;
                 }
             }
         }
@@ -332,6 +333,10 @@ img {
         font-size: 3em;
         letter-spacing: 0.125em;
         margin-bottom: 0.1em;
+    }
+    
+    img {
+        max-width: 60%;
     }
     
     &__date {
@@ -894,6 +899,7 @@ h2 {
         font-size: 0.8rem;
         cursor: pointer;
         margin-top: 1rem;
+        width: 100%;
         
         transition: background-color $transition-time;
         
