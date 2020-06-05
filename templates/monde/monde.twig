@@ -99,7 +99,7 @@
 				<div class="container-fluid">
 					<h1 class="l-title">{{ 'Accommodations'|t }}</h1>
 					<div class="row">
-						{% for area in areas %}
+						{% for area in areas.all() %}
 							<div class="col-sm-12 col-md-6 col-lg-4">
 								<a href="{{ area.url }}">
 									{% if area.imageDeLaPage|length %}
