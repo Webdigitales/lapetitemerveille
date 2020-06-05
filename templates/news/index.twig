@@ -1,8 +1,12 @@
 {% extends "_layout" %}
 
-{% set entries = craft.entries.section('news').limit(4) %}
+{% set posts = craft.entries()
+	.section('news')
+	.orderBy('dateCreated desc')
+	.limit(6)
+%}
 
-
+{% paginate posts as pageInfo, pageEntries %}
 
 {% block content %}
 	<div>
@@ -16,17 +20,17 @@
 		<div class="article-list">
 			<div class="container-fluid">
 				<div class="row">
-					{% for entry in entries.all() %}
+					{% for post in pageEntries %}
 						<div class="col-md-6">
 							<article class="article" data-aos="fade-up" data-aos-delay="200">
 								<div class="article__content">
-									<a href="{{ entry.url }}">
-										{% for image in entry.imageNews.all() %}
+									<a href="{{ post.url }}">
+										{% for image in post.imageNews %}
 											<img src="{{ image.getUrl('col6') }}" alt="{{ image.title }}">
 										{% endfor %}
 										<div class="article__title">
-											<time class="l-title" datetime="{{ entry.postDate | date('Y-m-d') }}">{{ entry.postDate | date('d M Y') }}</time>
-											<h2>{{ entry.title }}</h2>
+											<time class="l-title" datetime="{{ post.postDate | date('Y-m-d') }}">{{ post.postDate | date('d M Y') }}</time>
+											<h2>{{ post.title }}</h2>
 										</div>
 									</a>
 								</div>
@@ -37,6 +41,38 @@
 			</div>
 		</div>
 	</div>
+
+	{% if craft.entries().section('news')|length > 6 %}
+		<nav class="pagination-wrapper">
+			<ul class="pagination">
+				{% if pageInfo.prevUrl %}
+					<li class="pagination__item">
+						<a href="{{ pageInfo.prevUrl }}" class="pagination__link link--prev">{{ 'Previous Page'|t }}</a>
+					</li>
+				{% endif %}
+
+				{% for page, url in pageInfo.getPrevUrls(5) %}
+					<li class="pagination__item">
+						<a href="{{ url }}" class="pagination__link">{{ page }}</a>
+					</li>
+				{% endfor %}
+
+				<li class="pagination__item">
+					<span class="pagination__link current">{{ pageInfo.currentPage }}</span>
+				</li>
+
+				{% for page, url in pageInfo.getNextUrls(5) %}
+					<li class="pagination__item">
+						<a href="{{ url }}" class="pagination__link">{{ page }}</a>
+					</li>
+				{% endfor %}
+
+				{% if pageInfo.nextUrl %}
+					<a href="{{ pageInfo.nextUrl }}" class="pagination__link link--next">{{ 'Next Page'|t }}</a>
+				{% endif %}
+			</ul>
+		</nav>
+	{% endif %}
 
 {% endblock %}
 

@@ -12,5 +12,7 @@
     'The Worlds' => "Bestemmingen",
     'Packs' => "Accommodations",
     'Accommodations' => "Accommodations",
+    'Previous Page' => "Precent",
+    'Next Page' => "Volgende",
     'Tickets' => 'Tickets'
   ];
