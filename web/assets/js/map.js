@@ -129,5 +129,4 @@
             infowindow.open(map, marker);
         });
     }
-
   }

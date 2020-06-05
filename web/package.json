@@ -17,5 +17,8 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^2.0.1"
+  },
+  "dependencies": {
+    "swiper": "^5.4.2"
   }
 }

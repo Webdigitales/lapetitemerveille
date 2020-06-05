@@ -38,7 +38,7 @@
 							<section class="tickets">
 								<h2 class="tickets__title">{{ 'Tickets'|t }}</h2>
 								<ul class="tickets__list list">
-									{% for ticket in entry.tickets  %}
+									{% for ticket in entry.tickets.all()  %}
 										<li class="list__item">
 											<section class="ticket">
 												<div class="col-8">
@@ -64,9 +64,29 @@
 								</ul>
 							</section>
 						{% endif %}
-						{#{% if entry.gallery|length %}
-							{{ entry.gallery }}
-						{% endif %}#}
+						{% if entry.gallery.all()|length %}
+							<div class="swiper-container">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									{% for image in entry.gallery.all() %}
+										<div class="swiper-slide">
+											<img data-src="{{ image.url('sliderSmall') }}" alt="{{ image.title }}"
+													 width="{{ image.getWidth('sliderSmall') }}"
+													 height="{{ image.getHeight('sliderSmall') }}"
+													 class="img-fluid swiper-lazy">
+											<div class="swiper-lazy-preloader"></div>
+										</div>
+									{% endfor %}
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<div class="swiper-button-prev"></div>
+								<div class="swiper-button-next"></div>
+							</div>
+						{% endif %}
 					</main>
 				</div>
 				<div class="col-lg-4">

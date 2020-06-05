@@ -22,4 +22,33 @@ $(document).ready(function () {
         meanScreenWidth: 991,
         meanMenuContainer: '.site-wrapper'
     });
+
+    var mySwiper = new Swiper ('.swiper-container', {
+
+        // Optional parameters
+        loop: true,
+
+        // Disable preloading of all images
+        preloadImages: false,
+
+        // Enable lazy loading
+        lazy: {
+            loadPrevNext: true,
+        },
+
+        fadeEffect: {
+            crossFade: true
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    })
 });

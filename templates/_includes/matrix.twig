@@ -99,7 +99,7 @@
 			<div class="container-fluid">
 				<h1 class="l-title">{{ block.titreSection }}</h1>
 				<div class="row d-flex align-items-stretch">
-					{% for row in block.colonne %}
+					{% for row in block.colonne.all() %}
 						<div class="col-sm-12 col-md-6 col-lg">
 							<div class="card">
 								{% if row.boutonColonne|length %}
@@ -137,7 +137,7 @@
 					</div>
 				{% endif %}
 				<div class="row d-flex align-items-stretch">
-					{% for key, step in block.step %}
+					{% for key, step in block.step.all() %}
 						{% set key = key + 1 %}
 						<div class="col-sm-12 col-md">
 							<section class="steps__item step step--{{ key }}" data-aos="fade-up" data-aos-delay="{{ 200 + key * 100 }}">

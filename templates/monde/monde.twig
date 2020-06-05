@@ -117,7 +117,7 @@
 			</section>
 			{% endif %}
 
-		{% set packs = entry.pack %}
+		{% set packs = entry.pack.all() %}
 		{% if packs|length %}
 			<div class="part listpage" data-aos="fade-up">
 				<div class="container-fluid">
@@ -163,7 +163,7 @@
 							<div class="col">
 								{# Display the categories #}
 								<ul class="activity-list category-list list row d-flex align-items-stretch">
-									{% for category in entry.activityCategory %}
+									{% for category in entry.activityCategory.all() %}
 										<li class="list__item col-sm-12 col-md-6 col-lg-2">
 											<section class="activity">
 												<div class="image-wrapper">
