@@ -29,7 +29,7 @@
 					{% set entries = craft.entries.section('monde').level(2).descendantOf(entry.id) %}
 					<div class="container-fluid">
 						<div class="row">
-							{% for entry in entries %}
+							{% for entry in entries.all() %}
 								<div class="col-md-4">
 									<a href="{{ entry.url }}">
 										{% if entry.imageDeLaPage|length %}
