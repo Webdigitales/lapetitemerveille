@@ -5,7 +5,7 @@
     'Discover' => 'Découvrir NL',
     'Infos' => 'Infos',
     'Newsletter' => 'Newsletter',
-    'Stay tuned' => 'NL Restez branché, inscrivez-vous à notre newsletter',
+    'Stay tuned' => 'Blijf op de hoogte van alle nieuwigheden, acties en info',
     'Subscribe' => "Subscribe",
     'newsletterPlaceholder' => "Email address",
     'Activities' => "Activities",
