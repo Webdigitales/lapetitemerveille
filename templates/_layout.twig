@@ -85,7 +85,7 @@
 	{% endblock %}
 	<section class="partners">
 		<div class="container-fluid">
-			<h1 class='l-title' data-aos="fade-up">Nos partenaires</h1>
+			<h1 class='l-title' data-aos="fade-up">{{ 'Our partners'|t }}</h1>
 			<ul class="partners__list" data-aos="fade-up" data-aos-delay="100">
 				{% set posts = craft.entries.section('partenaires').all() %}
 				{% for post in posts %}

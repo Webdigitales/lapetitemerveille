@@ -12,5 +12,6 @@
   'Accommodations' => "Logements",
   'Previous Page' => "Précédent",
   'Next Page' => "Suivant",
+  'Our partners' => "Nos partenaires",
   'Tickets' => 'Tickets'
 );

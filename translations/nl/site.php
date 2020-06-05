@@ -14,5 +14,6 @@
     'Accommodations' => "Accommodations",
     'Previous Page' => "Precent",
     'Next Page' => "Volgende",
+    'Our partners' => "Onze partners",
     'Tickets' => 'Tickets'
   ];
