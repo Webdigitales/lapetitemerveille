@@ -12,22 +12,24 @@
 		height: 446,
 		quality: 100
 	} %}
-	<section class="hero-home" style="background-image:url({% if entry.imageDeFond|length %}
-		{% for image in entry.imageDeFond.all() %}
-			{{- image.getUrl(featureImage) -}}
-		{% endfor %}
-	{% endif %})">
+	<section class="hero-home">
 		<div class="hero--home__content">
-			{% if entry.imageHero|length %}
-				{% for image in entry.imageHero.all() %}
-					<img src="{{- image.getUrl(heroImageCrop) -}}" alt="">
-				{% endfor %}
-			{% endif %}
-			<h1 class="hero-home__title">
-				<span class="hero-home__date">{{ entry.date }}</span>
-				<span>{{ entry.titre }}</span>
-				{{ entry.sousTitre }}
-			</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class="hero-home__title">
+							<span class="hero-home__date">{{ entry.date }}</span>
+							<span>{{ entry.titre }}</span>
+							{{ entry.sousTitre }}
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="video-wrapper">
+			<video class="video" id="video" muted autoplay loop playsinline>
+				<source src="/assets/video/durbuy_exp_teaser.mp4" type="video/mp4">
+			</video>
 		</div>
 	</section>
 	<div class="content">
