@@ -1257,3 +1257,71 @@ h2 {
 .swiper-pagination-bullet-active {
     background: $primary;
 }
+
+.site-wrapper {
+    position: relative;
+}
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    .video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+}
+
+.counter-index {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.counter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    
+    ul {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        li {
+            color: $white;
+            font-weight: 700;
+            font-size: 4rem;
+            
+            @media (min-width: 992px) {
+                font-size: 10rem;
+            }
+            
+            & + li {
+                &:before {
+                    content: ':';
+                    display: inline-block;
+                    margin: 0 8px;
+                }
+            }
+        }
+    }
+}
