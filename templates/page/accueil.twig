@@ -57,11 +57,11 @@
 			</div>
 			{% include '_includes/matrix.twig' %}
 		</section>
+		{% set relatedEntries = entry.lienVersPage.all() %}
+		{% if relatedEntries|length %}
 		<section class="listpage" data-aos="fade-up">
 			<div class="container-fluid">
-				<h1 class="l-title">L'expérience Durbuy</h1>
-				{% set relatedEntries = entry.lienVersPage.all() %}
-				{% if relatedEntries|length %}
+				<h1 class="l-title">{{ "Durbuy experience"|t }}</h1>
 					<div class="row d-flex align-items-stretch">
 						{% for rel in relatedEntries %}
 							<div class="col-sm-12 col-md-6 col-lg">
@@ -85,9 +85,9 @@
 							</div>
 						{% endfor %}
 					</div>
-				{% endif %}
 			</div>
 		</section>
+		{% endif %}
 		{% set posts = craft.entries()
 			.section('monde')
 			.level('2')

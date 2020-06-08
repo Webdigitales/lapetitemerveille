@@ -15,5 +15,6 @@
     'Previous Page' => "Precent",
     'Next Page' => "Volgende",
     'Our partners' => "Onze partners",
+    'Durbuy experience' => "Durbuy experience",
     'Tickets' => 'Tickets'
   ];
