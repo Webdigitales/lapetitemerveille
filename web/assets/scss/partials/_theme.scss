@@ -1287,6 +1287,9 @@ h2 {
 .counter-index {
     height: 100vh;
     overflow: hidden;
+    
+    background-size: cover;
+    background-position: center center;
 }
 
 .counter {

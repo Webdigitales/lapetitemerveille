@@ -24,7 +24,7 @@
 </head>
 <body>
 {% do seomatic.script.get('googleTagManager').include(true) %}
-<div class="site-wrapper counter-index">
+<div class="site-wrapper counter-index" style="background-image: url(/assets/img/cover.jpg)">
 	<div class="counter">
 		<div class="container">
 			{% block content %}
@@ -38,11 +38,6 @@
 				</ul>
 			</div>
 		</div>
-	</div>
-	<div class="video-wrapper">
-		<video class="video" id="video" muted autoplay loop playsinline>
-			<source src="/assets/video/durbuy_exp_teaser.mp4" type="video/mp4">
-		</video>
 	</div>
 </div>
 <script src="/assets/js/vendor/modernizr-3.8.0.min.js"></script>
