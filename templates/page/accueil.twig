@@ -57,8 +57,8 @@
 					</div>
 				</div>
 			</div>
-			{% include '_includes/matrix.twig' %}
 		</section>
+		{% include '_includes/matrix.twig' %}
 		{% set relatedEntries = entry.lienVersPage.all() %}
 		{% if relatedEntries|length %}
 		<section class="listpage" data-aos="fade-up">
