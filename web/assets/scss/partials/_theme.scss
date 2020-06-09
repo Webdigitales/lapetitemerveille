@@ -1147,6 +1147,10 @@ h2 {
     padding-top: 4rem;
     padding-bottom: 0;
     
+    & + .part {
+        padding-top: 6rem;
+    }
+    
     .steps__title {
         margin-bottom: 4rem;
     }
