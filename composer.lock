@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bab73d3060df5aa12b53bc3f9a682e64",
+    "content-hash": "03e25ecda0f3f6d463d4c37c0e134573",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -4253,11 +4253,11 @@
         },
         {
             "name": "verbb/navigation",
-            "version": "1.3.18",
+            "version": "1.3.19",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/navigation/zipball/f5f973dfdddd489d71969f0c95d931d07458776b",
-                "reference": "f5f973dfdddd489d71969f0c95d931d07458776b",
+                "url": "https://api.github.com/repos/verbb/navigation/zipball/c9ae862369f9b8f81b2fe2835d3f675e987c6e52",
+                "reference": "c9ae862369f9b8f81b2fe2835d3f675e987c6e52",
                 "shasum": ""
             },
             "require": {
@@ -4301,7 +4301,7 @@
                 "docs": "https://github.com/verbb/navigation",
                 "rss": "https://github.com/verbb/navigation/commits/v2.atom"
             },
-            "time": "2020-06-05T04:21:04+00:00"
+            "time": "2020-06-06T04:03:56+00:00"
         },
         {
             "name": "verbb/super-table",
