@@ -642,7 +642,7 @@ section {
 footer {
     background-color: #371141;
     color: #FFF;
-    padding: 3em 0;
+    padding: 3em 0 2rem 0;
     
     a {
         color: #FFF;
@@ -671,6 +671,36 @@ footer {
         color: #F3C0FF;
         text-transform: uppercase;
         letter-spacing: 0.125em;
+    }
+    
+    .footer__copyright {
+        border-top: 1px solid #693577;
+        margin-top: 2rem;
+        padding-top: 2rem;
+        font-size: .825rem;
+        display: flex;
+        flex-flow: row wrap;
+        
+        ul {
+            display: flex;
+            padding: 0;
+            margin: 1rem 0 0 0;
+            
+            @media (min-width: 768px) {
+                justify-content: flex-end;
+                flex: 1 1 auto;
+                margin: 0;
+            }
+            
+            li + li {
+                padding: 0;
+                margin: 0 0 0 1rem;
+            }
+            
+            .is-active {
+                color: $primary-lighter;
+            }
+        }
     }
 }
 
@@ -926,6 +956,8 @@ h2 {
         border: 1px solid transparent;
         transition: border $transition-time;
         flex: 1 1 auto;
+        width: 100%;
+        max-width: 100%;
         
         &:focus {
             border: 1px solid $primary-lighter;

@@ -104,7 +104,7 @@
 			</ul>
 		</div>
 	</section>
-	<footer>
+	<footer class="site-footer footer">
 		<div class="container-fluid">
 			<h1 class="sr-only">Footer</h1>
 			<div class="row">
@@ -194,6 +194,21 @@
 								</div>
 						</form>
 					{% endif %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="footer__copyright">
+						<span class="copyright">
+							© {{ 'All rights reserved'|t }} La Petite Merveille
+						</span>
+						{{ craft.navigation.render('legalInfosNavigation', {
+							ulClass: 'nav',
+							liClass: 'nav__item',
+							aClass: 'nav__link',
+							activeClass: 'is-active'
+						}) }}
+					</div>
 				</div>
 			</div>
 		</div>

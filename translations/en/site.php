@@ -14,5 +14,6 @@
   'Next Page' => "Next page",
   'Our partners' => "Our partners",
   'Durbuy experience' => "Durbuy experience",
+  'All rights reserved' => "All rights reserved",
   'Tickets' => 'Tickets'
 );

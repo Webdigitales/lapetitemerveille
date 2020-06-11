@@ -16,5 +16,6 @@
     'Next Page' => "Volgende",
     'Our partners' => "Onze partners",
     'Durbuy experience' => "Durbuy experience",
+    'All rights reserved' => "All rights reserved",
     'Tickets' => 'Tickets'
   ];
