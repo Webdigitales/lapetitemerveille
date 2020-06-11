@@ -1,17 +1,17 @@
 <?php
 
   return [
-    'Universe' => 'Univers NL',
-    'Discover' => 'Découvrir NL',
+    'Universe' => 'Bestemmingen',
+    'Discover' => 'Ontdek',
     'Infos' => 'Infos',
     'Newsletter' => 'Newsletter',
     'Stay tuned' => 'Blijf op de hoogte van alle nieuwigheden, acties en info',
     'Subscribe' => "Subscribe",
-    'newsletterPlaceholder' => "Email address",
-    'Activities' => "Activities",
+    'newsletterPlaceholder' => "E-mailadres",
+    'Activities' => "Activiteiten",
     'The Worlds' => "Bestemmingen",
-    'Packs' => "Accommodations",
-    'Accommodations' => "Accommodations",
+    'Packs' => "Accommodatie",
+    'Accommodations' => "Accommodatie",
     'Previous Page' => "Precent",
     'Next Page' => "Volgende",
     'Our partners' => "Onze partners",
