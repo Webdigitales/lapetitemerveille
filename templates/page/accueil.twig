@@ -48,8 +48,8 @@
 					<div class="col-md-6 introduction__image order-1 order-lg-2">
 						{% if entry.imageIntro|length %}
 							{% for image in entry.imageIntro.all() %}
-								<img src="{{- image.getUrl('col6') -}}" alt="{{ image.title }}"
-										 width="{{ image.getWidth('col6') }}" height="{{ image.getHeight('col6') }}"
+								<img src="{{- image.getUrl('sliderSmall') -}}" alt="{{ image.title }}"
+										 width="{{ image.getWidth('sliderSmall') }}" height="{{ image.getHeight('sliderSmall') }}"
 										 data-aos="fade-up">
 
 							{% endfor %}
