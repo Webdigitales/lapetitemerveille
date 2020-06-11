@@ -12,6 +12,10 @@ $transition-time: .3s;
     max-width: 1300px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: linear-gradient(180deg, #FFFFFF 0%, #FFE8FA 100%);
     min-height: 100vh;
