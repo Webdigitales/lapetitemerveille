@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-    initMap();
-
     $(".hero-home").mousemove(function (e) {
 
         var screenWidth = $(window).width();
@@ -52,4 +50,6 @@ $(document).ready(function () {
             prevEl: '.swiper-button-prev',
         }
     })
+
+    initMap();
 });
