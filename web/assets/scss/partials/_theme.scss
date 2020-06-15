@@ -114,11 +114,14 @@ img {
                     }
                     
                     &.button--green {
-                        background-color: #0fbd70;
+                        .nav__link {
+                            background-color: #0fbd70;
     
-                        &:hover {
-                            background-color: $primary-lighter;
+                            &:hover {
+                                background-color: $primary-lighter;
+                            }
                         }
+                       
                     }
                 }
                 
