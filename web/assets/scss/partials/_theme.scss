@@ -112,6 +112,14 @@ img {
                             background-color: $primary-lighter;
                         }
                     }
+                    
+                    &.button--green {
+                        background-color: #0fbd70;
+    
+                        &:hover {
+                            background-color: $primary-lighter;
+                        }
+                    }
                 }
                 
                 > .nav__link {
