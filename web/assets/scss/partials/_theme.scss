@@ -940,6 +940,13 @@ h2 {
         }
     }
     
+    .button--green {
+        .nav__link {
+            background-color: #0fbd70;
+        }
+        
+    }
+    
     .nav__link {
         &.is-active {
             color: $primary-lighter;
