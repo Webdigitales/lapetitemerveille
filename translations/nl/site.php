@@ -17,5 +17,7 @@
     'Our partners' => "Onze partners",
     'Durbuy experience' => "Durbuy experience",
     'All rights reserved' => "All rights reserved",
+    'Make an appointment' => "Maak een afspraak",
+    'Our sales representatives will be happy to visit you within your company for a first exchange and the development of a customized program. Then, everything is organized in every detail on the spot with the team "Event".' => "Onze verkopers brengen u graag een bezoek in uw bedrijf voor een eerste gesprek en een programma op maat. We verzorgen en organiseren een perfecte opvolging ter plaatse.",
     'Tickets' => 'Tickets'
   ];

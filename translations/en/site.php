@@ -15,5 +15,7 @@
   'Our partners' => "Our partners",
   'Durbuy experience' => "Durbuy experience",
   'All rights reserved' => "All rights reserved",
+  'Make an appointment' => "Make an appointment",
+  'Our sales representatives will be happy to visit you within your company for a first exchange and the development of a customized program. Then, everything is organized in every detail on the spot with the team "Event".' => "Our sales representatives will be happy to visit you within your company for a first exchange and the development of a customized program. Then, everything is organized in every detail on the spot with the team \"Event\".",
   'Tickets' => 'Tickets'
 );
