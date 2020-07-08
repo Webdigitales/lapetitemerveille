@@ -79,12 +79,12 @@
                                         <span class="infos__text">{{ entry.capacity }}</span>
                                     </li>
                                 {% endif %}
-                                {% if entry.bookinglink|length %}
+                                {#{% if entry.bookinglink|length %}
                                     <li class="list__item item--button">
                                         <a href="{{ entry.bookinglink.url }}" target="{{ entry.bookinglink.target }}"
                                            class="btn btn-primary">{{ entry.bookinglink.text }}</a>
-                                    </li>
-                                {% else if globalInfos.bookinglink|length %}
+                                    </li>#}
+                                {% if globalInfos.bookinglink|length %}
                                     <li class="list__item item--button">
                                         <a href="{{ globalInfos.bookinglink.url }}"
                                            target="{{ globalInfos.bookinglink.target }}"
