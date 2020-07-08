@@ -84,7 +84,7 @@
                                         <a href="{{ entry.bookinglink.url }}" target="{{ entry.bookinglink.target }}"
                                            class="btn btn-primary">{{ entry.bookinglink.text }}</a>
                                     </li>
-                                {% else globalInfos.bookinglink|length %}
+                                {% else if globalInfos.bookinglink|length %}
                                     <li class="list__item item--button">
                                         <a href="{{ globalInfos.bookinglink.url }}"
                                            target="{{ globalInfos.bookinglink.target }}"
