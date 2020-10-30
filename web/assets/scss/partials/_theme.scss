@@ -2,8 +2,8 @@
    Author's custom styles
    ========================================================================== */
 
-$primary: #540769;
-$primary-lighter: #f0c0ff;
+$primary: #002425;
+$primary-lighter: #9BBEDB;
 $white: #fff;
 
 $transition-time: .3s;
@@ -17,9 +17,8 @@ html {
 }
 
 body {
-    background-image: linear-gradient(180deg, #FFFFFF 0%, #FFE8FA 100%);
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #f1f1f1 100%);
     min-height: 100vh;
-    font-family: sans-serif;
     font-family: europa, sans-serif;
     font-weight: 400;
 }
@@ -194,18 +193,6 @@ img {
                     transform: translateY(15px);
                     visibility: hidden;
                     transition: all $transition-time;
-                    
-                    &:before {
-                        content: '';
-                        height: 3px;
-                        width: 100%;
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        display: block;
-                        background-image: linear-gradient(90deg, #CE77E6 0%, #ECA0FF 100%);
-                        
-                    }
                     
                     > .nav__item {
                         flex: 1 1 100%;
@@ -557,7 +544,7 @@ section {
             transition: 500ms;
             
             h2 {
-                background-color: rgba(84, 7, 105, 0.55);
+                background-color: rgba($primary, 0.55);
                 transition: 500ms;
             }
         }
@@ -682,7 +669,7 @@ section {
 }
 
 footer {
-    background-color: #371141;
+    background-color: $primary;
     color: #FFF;
     padding: 3em 0 2rem 0;
     
@@ -710,13 +697,13 @@ footer {
     
     h2 {
         font-size: 0.875em;
-        color: #F3C0FF;
+        color: $primary-lighter;
         text-transform: uppercase;
         letter-spacing: 0.125em;
     }
     
     .footer__copyright {
-        border-top: 1px solid #693577;
+        border-top: 1px solid #2DA792;
         margin-top: 2rem;
         padding-top: 2rem;
         font-size: .825rem;
@@ -744,13 +731,6 @@ footer {
             }
         }
     }
-}
-
-.content {
-    background-image: url(../img/deco1.png);
-    background-size: 326px 465px;
-    background-repeat: no-repeat;
-    background-position: left top;
 }
 
 .news {
@@ -1028,7 +1008,7 @@ h2 {
         
         &:hover {
             color: $white;
-            background-color: $primary;
+            background-color: #2DA792;
         }
     }
 }
