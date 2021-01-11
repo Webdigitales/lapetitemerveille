@@ -1458,3 +1458,35 @@ h2 {
         }
     }
 }
+
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002425;
+    height: 100vh;
+    position: relative;
+    
+    .content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    h1 {
+        color: #fff;
+        font-size: 48px;
+        margin-top: 40px;
+        padding: 0 16px;
+        text-align: center;
+        line-height: 50px;
+    }
+    
+    .logo {
+        justify-content: center;
+        display: flex;
+    }
+    
+    svg {
+        fill: #fff;
+    }
+}
