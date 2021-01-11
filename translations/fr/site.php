@@ -12,7 +12,7 @@
   'Accommodations' => "Logements",
   'Previous Page' => "Précédent",
   'Next Page' => "Suivant",
-  'Our partners' => "Nos partenaires",
+  'Our partners' => "Nos références",
   'Durbuy experience' => "L'expérience Durbuy",
   'All rights reserved' => "Tous droits réservés",
   'Make an appointment' => "Prenez rendez-vous",

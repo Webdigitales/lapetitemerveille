@@ -12,7 +12,7 @@
   'Accommodations' => "Accommodations",
   'Previous Page' => "Previous page",
   'Next Page' => "Next page",
-  'Our partners' => "Our partners",
+  'Our partners' => "Our references",
   'Durbuy experience' => "Durbuy experience",
   'All rights reserved' => "All rights reserved",
   'Make an appointment' => "Make an appointment",

@@ -14,7 +14,7 @@
     'Accommodations' => "Accommodatie",
     'Previous Page' => "Precent",
     'Next Page' => "Volgende",
-    'Our partners' => "Onze partners",
+    'Our partners' => "Onze referenties",
     'Durbuy experience' => "Durbuy experience",
     'All rights reserved' => "All rights reserved",
     'Make an appointment' => "Maak een afspraak",
