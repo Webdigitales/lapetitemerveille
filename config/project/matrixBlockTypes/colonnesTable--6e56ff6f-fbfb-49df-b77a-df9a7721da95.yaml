@@ -3,13 +3,25 @@ fieldLayouts:
   fe084d1a-4a16-41ae-b4a3-d072c53f3361:
     tabs:
       -
-        fields:
-          326377d2-ea16-4292-8960-c3d03b7b90f5:
+        elements:
+          -
+            fieldUid: deab7151-07c9-4ee1-84e4-c7be0f58fb8b
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          deab7151-07c9-4ee1-84e4-c7be0f58fb8b:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 326377d2-ea16-4292-8960-c3d03b7b90f5
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -55,6 +67,7 @@ fields:
       fieldLayout: row
       maxRows: ''
       minRows: ''
+      placeholderKey: null
       propagationMethod: all
       selectionLabel: 'Ajouter une colonne'
       staticField: ''
@@ -76,6 +89,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText

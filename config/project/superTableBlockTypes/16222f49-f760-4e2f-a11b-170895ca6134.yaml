@@ -3,16 +3,34 @@ fieldLayouts:
   35084e05-dcb1-41e9-9d0b-862043394600:
     tabs:
       -
-        fields:
-          5d947b98-9099-494a-a2c0-4216886c7338:
+        elements:
+          -
+            fieldUid: dcd0e45f-f4fe-495f-ae73-df36efb0f63c
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          dcd0e45f-f4fe-495f-ae73-df36efb0f63c:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e1752790-6319-40ef-a732-df5a0c5a70b8
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          e1752790-6319-40ef-a732-df5a0c5a70b8:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5d947b98-9099-494a-a2c0-4216886c7338
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -107,6 +125,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
@@ -122,14 +141,19 @@ fields:
       availableVolumes: ''
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: Simple.json
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field

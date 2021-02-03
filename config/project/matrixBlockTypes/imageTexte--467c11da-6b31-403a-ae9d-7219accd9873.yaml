@@ -3,19 +3,43 @@ fieldLayouts:
   4ccefebd-75bb-407c-9299-b9424e43bbc3:
     tabs:
       -
-        fields:
-          0b39679c-a901-47d6-bf2e-cf20538aae7d:
+        elements:
+          -
+            fieldUid: 8ea02813-8fae-44a3-a64d-f3282ec08195
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          8ea02813-8fae-44a3-a64d-f3282ec08195:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0b39679c-a901-47d6-bf2e-cf20538aae7d
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          92062b59-fe6f-49c0-ae12-c0a0d20fa192:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e00f242e-2382-4342-9e13-a25cacc357b9
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
-          e00f242e-2382-4342-9e13-a25cacc357b9:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 92062b59-fe6f-49c0-ae12-c0a0d20fa192
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -31,14 +55,19 @@ fields:
       availableVolumes: '*'
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: language
     type: craft\redactor\Field
@@ -57,6 +86,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
@@ -148,14 +178,18 @@ fields:
     name: Image
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
       defaultUploadLocationSubpath: ''
       limit: ''
-      localizeRelations: ''
+      localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: ''
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
@@ -164,7 +198,7 @@ fields:
       sources: '*'
       targetSiteId: null
       useSingleFolder: true
-      validateRelatedElements: ''
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site

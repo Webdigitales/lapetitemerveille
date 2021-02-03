@@ -1,4 +1,5 @@
 baseUrl: '@web'
+enabled: true
 handle: fr
 hasUrls: true
 language: fr

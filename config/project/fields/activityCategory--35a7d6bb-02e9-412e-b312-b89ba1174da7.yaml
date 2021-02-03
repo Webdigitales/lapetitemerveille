@@ -7,14 +7,16 @@ searchable: true
 settings:
   allowLimit: false
   allowMultipleSources: false
+  allowSelfRelations: false
   branchLimit: ''
   limit: null
-  localizeRelations: '1'
+  localizeRelations: true
   selectionLabel: 'Ajouter une activité'
+  showSiteMenu: true
   source: 'group:57f9b979-465d-4bb2-96c1-0d12e6c0def6'
   sources: '*'
   targetSiteId: null
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site

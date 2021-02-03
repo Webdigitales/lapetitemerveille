@@ -5,13 +5,17 @@ instructions: ''
 name: 'Galerie photos'
 searchable: true
 settings:
+  allowSelfRelations: false
+  allowUploads: true
   allowedKinds: null
   defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
   defaultUploadLocationSubpath: ''
   limit: ''
-  localizeRelations: '1'
+  localizeRelations: true
+  previewMode: full
   restrictFiles: ''
   selectionLabel: ''
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
@@ -20,7 +24,7 @@ settings:
   sources: '*'
   targetSiteId: 84b6bb21-bdc2-41fb-b07a-7c343f7a7288
   useSingleFolder: false
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
 translationMethod: site

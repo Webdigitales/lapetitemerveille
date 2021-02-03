@@ -2,10 +2,39 @@ fieldLayouts:
   fc108e18-817f-426f-8648-ec8bf18f0071:
     tabs:
       -
-        fields:
-          f7e4b87b-a0f1-4605-96d3-07a55640216f:
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: f7e4b87b-a0f1-4605-96d3-07a55640216f
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Tab 1'
         sortOrder: 1
 handle: activity
@@ -13,15 +42,15 @@ name: Activité
 siteSettings:
   3e688797-0718-4e03-a06c-6c0acf236e7b:
     hasUrls: true
-    template: ''
+    template: null
     uriFormat: 'activiteit/{slug}'
   84b6bb21-bdc2-41fb-b07a-7c343f7a7288:
     hasUrls: true
-    template: ''
+    template: null
     uriFormat: 'activité/{slug}'
   de5f043b-b6bd-4feb-89c2-c5e38cef6faf:
     hasUrls: true
-    template: ''
+    template: null
     uriFormat: 'activité/{slug}'
 structure:
   maxLevels: null

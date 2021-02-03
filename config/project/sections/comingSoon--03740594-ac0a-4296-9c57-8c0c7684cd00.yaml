@@ -19,15 +19,15 @@ siteSettings:
     enabledByDefault: true
     hasUrls: false
     template: null
-    uriFormat: ''
+    uriFormat: null
   84b6bb21-bdc2-41fb-b07a-7c343f7a7288:
     enabledByDefault: true
     hasUrls: false
     template: null
-    uriFormat: ''
+    uriFormat: null
   de5f043b-b6bd-4feb-89c2-c5e38cef6faf:
     enabledByDefault: true
     hasUrls: false
     template: null
-    uriFormat: ''
+    uriFormat: null
 type: single

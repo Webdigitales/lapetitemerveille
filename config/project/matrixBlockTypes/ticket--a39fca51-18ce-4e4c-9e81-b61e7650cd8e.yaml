@@ -3,16 +3,34 @@ fieldLayouts:
   91a1503e-4064-44e2-b229-e0bf252dde38:
     tabs:
       -
-        fields:
-          98dec2c6-4527-43d9-bc27-99e399f3aa60:
+        elements:
+          -
+            fieldUid: 9fb04f3b-a3fc-47e7-8423-72af56467862
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          9fb04f3b-a3fc-47e7-8423-72af56467862:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f95ab444-e2d0-4c44-acf7-36f2474f3315
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          f95ab444-e2d0-4c44-acf7-36f2474f3315:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 98dec2c6-4527-43d9-bc27-99e399f3aa60
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -31,6 +49,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
@@ -49,6 +68,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
@@ -64,14 +84,19 @@ fields:
       availableVolumes: ''
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: Simple.json
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: site
     type: craft\redactor\Field

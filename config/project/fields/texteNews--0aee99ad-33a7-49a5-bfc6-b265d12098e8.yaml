@@ -10,14 +10,19 @@ settings:
     - eff0dab7-b33f-4b25-bd91-d98f373e8131
   cleanupHtml: true
   columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
   purifierConfig: ''
   purifyHtml: ''
   redactorConfig: Standard.json
   removeEmptyTags: '1'
   removeInlineStyles: '1'
   removeNbsp: '1'
+  showHtmlButtonForNonAdmins: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
+  uiMode: enlarged
 translationKeyFormat: null
 translationMethod: language
 type: craft\redactor\Field

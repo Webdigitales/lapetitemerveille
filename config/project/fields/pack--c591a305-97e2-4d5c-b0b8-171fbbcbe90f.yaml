@@ -5,14 +5,16 @@ instructions: 'Lier des packs à cette page'
 name: Pack
 searchable: true
 settings:
+  allowSelfRelations: false
   limit: ''
-  localizeRelations: '1'
+  localizeRelations: true
   selectionLabel: 'Ajouter un pack'
+  showSiteMenu: true
   source: null
   sources:
     - 'section:2abc0dfb-ffe2-488d-bab3-780b03da640c'
   targetSiteId: null
-  validateRelatedElements: '1'
+  validateRelatedElements: true
   viewMode: null
 translationKeyFormat: null
 translationMethod: site

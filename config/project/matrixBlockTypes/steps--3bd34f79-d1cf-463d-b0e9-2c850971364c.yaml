@@ -3,13 +3,25 @@ fieldLayouts:
   1c4fb73e-9a40-4161-9b1d-a827d716ca2d:
     tabs:
       -
-        fields:
-          82c733f5-e64e-4c63-9669-1fcecbea928d:
+        elements:
+          -
+            fieldUid: 82c733f5-e64e-4c63-9669-1fcecbea928d
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          b7bb9098-e6ac-4442-909d-c493169083ad:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b7bb9098-e6ac-4442-909d-c493169083ad
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -28,6 +40,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\PlainText
@@ -66,6 +79,7 @@ fields:
       fieldLayout: matrix
       maxRows: '3'
       minRows: '1'
+      placeholderKey: null
       propagationMethod: all
       selectionLabel: 'Ajouter une étape'
       staticField: ''

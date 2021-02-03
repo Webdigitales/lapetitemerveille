@@ -3,19 +3,43 @@ fieldLayouts:
   ddd024aa-aeb1-4511-81e6-c8ab2084cc34:
     tabs:
       -
-        fields:
-          08ce0776-1e88-4c42-bc2f-9e1fa1fa0943:
+        elements:
+          -
+            fieldUid: 91c360b3-c960-4bb1-9bd3-cb3a16a42066
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          0f3d9e61-4f43-41f2-967b-26be68d81df2:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0f3d9e61-4f43-41f2-967b-26be68d81df2
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          91c360b3-c960-4bb1-9bd3-cb3a16a42066:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 08ce0776-1e88-4c42-bc2f-9e1fa1fa0943
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          a82943e1-676f-4fc2-96e6-12837039aa26:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a82943e1-676f-4fc2-96e6-12837039aa26
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -27,14 +51,18 @@ fields:
     name: Image
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
       defaultUploadLocationSubpath: ''
       limit: ''
-      localizeRelations: ''
+      localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: ''
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
@@ -43,7 +71,7 @@ fields:
       sources: '*'
       targetSiteId: null
       useSingleFolder: true
-      validateRelatedElements: ''
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
@@ -63,6 +91,7 @@ fields:
       initialRows: '4'
       multiline: '1'
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
@@ -81,6 +110,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText

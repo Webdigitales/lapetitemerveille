@@ -5,13 +5,17 @@ instructions: ''
 name: 'Image Hero'
 searchable: true
 settings:
+  allowSelfRelations: false
+  allowUploads: true
   allowedKinds: null
   defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
   defaultUploadLocationSubpath: ''
   limit: ''
-  localizeRelations: ''
+  localizeRelations: false
+  previewMode: full
   restrictFiles: ''
   selectionLabel: ''
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
@@ -20,7 +24,7 @@ settings:
   sources: '*'
   targetSiteId: null
   useSingleFolder: true
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null
 translationMethod: site

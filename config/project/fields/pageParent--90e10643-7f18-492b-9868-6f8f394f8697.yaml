@@ -5,7 +5,9 @@ instructions: ''
 name: 'Page Parent ?'
 searchable: true
 settings:
-  default: ''
+  default: false
+  offLabel: null
+  onLabel: null
 translationKeyFormat: null
 translationMethod: language
 type: craft\fields\Lightswitch

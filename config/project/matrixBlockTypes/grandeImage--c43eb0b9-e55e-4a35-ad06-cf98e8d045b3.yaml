@@ -3,10 +3,16 @@ fieldLayouts:
   8bd66942-e37a-4af9-b1e0-d9338c6f09cb:
     tabs:
       -
-        fields:
-          2e095ecc-72ae-421c-bbaa-4c9f4bb55f30:
+        elements:
+          -
+            fieldUid: 2e095ecc-72ae-421c-bbaa-4c9f4bb55f30
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -18,14 +24,18 @@ fields:
     name: grandeImage
     searchable: true
     settings:
+      allowSelfRelations: false
+      allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
       defaultUploadLocationSubpath: ''
       limit: '1'
-      localizeRelations: ''
+      localizeRelations: false
+      previewMode: full
       restrictFiles: '1'
       selectionLabel: ''
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
@@ -34,7 +44,7 @@ fields:
       sources: '*'
       targetSiteId: null
       useSingleFolder: true
-      validateRelatedElements: ''
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site

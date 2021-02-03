@@ -3,19 +3,43 @@ fieldLayouts:
   4dfbd996-a2f6-4454-8250-91a80c4ff2f3:
     tabs:
       -
-        fields:
-          084f6562-7592-4b20-b133-4f643016ce60:
+        elements:
+          -
+            fieldUid: 1a1303e4-39c9-4e40-a7c8-e52a9cd0bb88
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
-          1a1303e4-39c9-4e40-a7c8-e52a9cd0bb88:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eb588270-9789-47a8-bb85-6cc524d510df
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          bca2ed0f-b69a-4f6e-ab9a-e7f7bf8a515d:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bca2ed0f-b69a-4f6e-ab9a-e7f7bf8a515d
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          eb588270-9789-47a8-bb85-6cc524d510df:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 084f6562-7592-4b20-b133-4f643016ce60
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -47,6 +71,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
@@ -65,6 +90,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: 'En savoir plus'
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: language
     type: craft\fields\PlainText
@@ -80,14 +106,19 @@ fields:
       availableVolumes: '*'
       cleanupHtml: true
       columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
       purifierConfig: ''
       purifyHtml: '1'
       redactorConfig: ''
       removeEmptyTags: '1'
       removeInlineStyles: '1'
       removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
+      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: language
     type: craft\redactor\Field

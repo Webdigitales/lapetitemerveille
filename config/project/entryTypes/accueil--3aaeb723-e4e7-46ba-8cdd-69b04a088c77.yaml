@@ -4,57 +4,121 @@ fieldLayouts:
       -
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
             instructions: null
             label: ''
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
           -
             fieldUid: 7ad4ebb2-6984-4493-af9b-711e316d719f
+            instructions: null
+            label: null
             required: true
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 06fdaf69-6885-4f95-9c1f-aa85e44c2751
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 805830ad-0fe4-4b9d-8a8e-cbe831914644
+            instructions: null
+            label: null
             required: true
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Hero
         sortOrder: 1
       -
         elements:
           -
             fieldUid: 0f3d0dc1-5cfc-47c8-bd27-6cceb12e282a
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: d99d660a-b341-4c74-baee-e6a021d49b26
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: a6e395ea-6105-4494-8cae-027268f59213
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
           -
             fieldUid: 775006d6-7318-43d0-8861-80559b0f28f5
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Introduction
         sortOrder: 2
       -
         elements:
           -
             fieldUid: c5ad5d5e-653f-4b32-ac93-039578cbb009
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Contenu
         sortOrder: 3
       -
         elements:
           -
             fieldUid: bb2c1b72-b68d-4e9b-9996-bdd484d6074f
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: 'Liens vers page'
         sortOrder: 4
 handle: accueil
@@ -63,3 +127,5 @@ name: Accueil
 section: 5babcc08-e86b-49bd-977e-fddfdc2297f8
 sortOrder: 1
 titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

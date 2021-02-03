@@ -3,10 +3,16 @@ fieldLayouts:
   38e11c68-5bca-4a1a-851f-2e2a970e0804:
     tabs:
       -
-        fields:
-          f5242102-38de-40d7-a35f-75e1243e8cbe:
+        elements:
+          -
+            fieldUid: f5242102-38de-40d7-a35f-75e1243e8cbe
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -38,6 +44,7 @@ fields:
       fieldLayout: matrix
       maxRows: ''
       minRows: '1'
+      placeholderKey: null
       propagationMethod: all
       selectionLabel: 'Ajouter une FAQ'
       staticField: ''
