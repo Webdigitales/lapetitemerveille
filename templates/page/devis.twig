@@ -104,45 +104,45 @@
                         </section>
                     </main>
                 </div>
+                <div class="col-lg-4">
+                    <aside class="page__section content__sidebar sidebar" data-aos="fade-up" data-delay="200">
+                        <div class="sidebar__content">
+                            <h3>{{ 'Make an appointment'|t }}</h3>
+                            <p>
+                                {{ 'Our sales representatives will be happy to visit you within your company for a first exchange and the development of a customized program. Then, everything is organized in every detail on the spot with the team "Event".'|t }}
+                            </p>
+                        </div>
+                        <div class="sidebar__footer">
+                            <div class="col">
+                                {% if craft.app.language == "fr" %}
+                                    <img src="/assets/img/luigi-lpm.jpg" alt="LUIGI CODUTI">
+                                {% else %}
+                                    <img src="/assets/img/an-lpm.jpg" alt="An">
+                                {% endif %}
+                            </div>
+                            <div class="col">
+                                {% if craft.app.language == "fr" %}
+                                    <strong>Luigi Coduti</strong>
+                                    <a href="mailto:luigi@lpm.be" class="mail">
+                                        luigi@lpm.be
+                                    </a>
+                                    <a href="tel:+32471784342" class="phone">
+                                        +32 (0) 471 / 78 43 42
+                                    </a>
+                                {% else %}
+                                    <strong>An Maerten</strong>
+                                    <a href="mailto:an@lpm.be" class="mail">
+                                        an@lpm.be
+                                    </a>
+                                    <a href="tel:+32460954643" class="phone">
+                                        +32 (0) 460 / 95 46 43
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
-		</div>
-        <div class="col-lg-4">
-            <aside class="page__section content__sidebar sidebar" data-aos="fade-up" data-delay="200">
-                <div class="sidebar__content">
-                    <h3>{{ 'Make an appointment'|t }}</h3>
-                    <p>
-                        {{ 'Our sales representatives will be happy to visit you within your company for a first exchange and the development of a customized program. Then, everything is organized in every detail on the spot with the team "Event".'|t }}
-                    </p>
-                </div>
-                <div class="sidebar__footer">
-                    <div class="col">
-                        {% if craft.app.language == "fr" %}
-                            <img src="/assets/img/luigi-lpm.jpg" alt="LUIGI CODUTI">
-                        {% else %}
-                            <img src="/assets/img/an-lpm.jpg" alt="An">
-                        {% endif %}
-                    </div>
-                    <div class="col">
-                        {% if craft.app.language == "fr" %}
-                            <strong>Luigi Coduti</strong>
-                            <a href="mailto:luigi@lpm.be" class="mail">
-                                luigi@lpm.be
-                            </a>
-                            <a href="tel:+32471784342" class="phone">
-                                +32 (0) 471 / 78 43 42
-                            </a>
-                        {% else %}
-                            <strong>An Maerten</strong>
-                            <a href="mailto:an@lpm.be" class="mail">
-                                an@lpm.be
-                            </a>
-                            <a href="tel:+32460954643" class="phone">
-                                +32 (0) 460 / 95 46 43
-                            </a>
-                        {% endif %}
-                    </div>
-                </div>
-            </aside>
 		</div>
 	</div>
 {% endblock %}
