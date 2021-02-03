@@ -164,10 +164,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  webpack-assets:
-    edition: standard
-    enabled: false
-    schemaVersion: 2.0.0
 system:
   edition: pro
   live: true
