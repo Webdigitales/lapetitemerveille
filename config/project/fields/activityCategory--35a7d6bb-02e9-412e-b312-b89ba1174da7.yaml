@@ -1,0 +1,21 @@
+contentColumnType: string
+fieldGroup: ecec799f-b757-4018-941b-e2c75c877471
+handle: activityCategory
+instructions: ''
+name: Activité
+searchable: true
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  branchLimit: ''
+  limit: null
+  localizeRelations: '1'
+  selectionLabel: 'Ajouter une activité'
+  source: 'group:57f9b979-465d-4bb2-96c1-0d12e6c0def6'
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

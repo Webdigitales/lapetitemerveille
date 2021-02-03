@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 81d0e628-aea8-479b-a95f-077bc7d85acc
+handle: tickets
+instructions: ''
+name: Tickets
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_tickets}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

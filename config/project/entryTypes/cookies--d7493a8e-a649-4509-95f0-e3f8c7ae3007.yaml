@@ -1,0 +1,21 @@
+fieldLayouts:
+  8e40b69b-89af-4ec7-a086-70761ca34cc8:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 7ad4ebb2-6984-4493-af9b-711e316d719f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: cookies
+hasTitleField: false
+name: Cookies
+section: ab127659-4430-401f-9ad7-8781f4df547a
+sortOrder: 1
+titleFormat: '{section.name|raw}'

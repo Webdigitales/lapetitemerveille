@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: b7be47d6-258f-4559-be92-1cba6a6ca448
+handle: titre
+instructions: ''
+name: Titre
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

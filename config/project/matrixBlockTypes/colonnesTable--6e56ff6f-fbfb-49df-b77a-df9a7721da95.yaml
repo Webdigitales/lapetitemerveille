@@ -1,0 +1,84 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  fe084d1a-4a16-41ae-b4a3-d072c53f3361:
+    tabs:
+      -
+        fields:
+          326377d2-ea16-4292-8960-c3d03b7b90f5:
+            required: false
+            sortOrder: 2
+          deab7151-07c9-4ee1-84e4-c7be0f58fb8b:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  326377d2-ea16-4292-8960-c3d03b7b90f5:
+    contentColumnType: string
+    fieldGroup: null
+    handle: colonne
+    instructions: ''
+    name: Colonne
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - 91c360b3-c960-4bb1-9bd3-cb3a16a42066
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 0f3d9e61-4f43-41f2-967b-26be68d81df2
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 08ce0776-1e88-4c42-bc2f-9e1fa1fa0943
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - a82943e1-676f-4fc2-96e6-12837039aa26
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_7_colonne}}'
+      fieldLayout: row
+      maxRows: ''
+      minRows: ''
+      propagationMethod: all
+      selectionLabel: 'Ajouter une colonne'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+  deab7151-07c9-4ee1-84e4-c7be0f58fb8b:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titreSection
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: colonnesTable
+name: Colonnes
+sortOrder: 6

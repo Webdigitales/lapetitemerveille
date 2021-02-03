@@ -1,0 +1,25 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  f86a50ff-2fda-4556-9b4b-fb915365a9d9:
+    tabs:
+      -
+        fields:
+          8725db17-e6a2-42fe-93c2-b09ab92d3fd2:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  8725db17-e6a2-42fe-93c2-b09ab92d3fd2:
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoVideo
+    instructions: 'Copier coller l''iframe Youtube ou Viméo'
+    name: video
+    searchable: true
+    translationKeyFormat: null
+    translationMethod: language
+    type: mikestecker\videoembedder\fields\Video
+handle: video
+name: Video
+sortOrder: 4

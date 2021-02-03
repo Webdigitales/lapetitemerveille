@@ -1,0 +1,41 @@
+fieldLayouts:
+  dcbea026-2245-4202-93eb-88bc446f7eb5:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: f7e4b87b-a0f1-4605-96d3-07a55640216f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 1ad1fa2f-ff3d-4da5-8b01-d07110082775
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Général
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: c5ad5d5e-653f-4b32-ac93-039578cbb009
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Contenu
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: faf0f324-c747-46f4-bc01-c4eca141da00
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Galerie photos'
+        sortOrder: 3
+handle: b2b
+hasTitleField: true
+name: B2B
+section: 3876e609-694d-4eb0-9d5d-07053610b3ce
+sortOrder: 1
+titleFormat: ''

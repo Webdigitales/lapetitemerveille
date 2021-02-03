@@ -1,0 +1,166 @@
+field: 326377d2-ea16-4292-8960-c3d03b7b90f5
+fieldLayouts:
+  ddd024aa-aeb1-4511-81e6-c8ab2084cc34:
+    tabs:
+      -
+        fields:
+          08ce0776-1e88-4c42-bc2f-9e1fa1fa0943:
+            required: false
+            sortOrder: 3
+          0f3d9e61-4f43-41f2-967b-26be68d81df2:
+            required: false
+            sortOrder: 2
+          91c360b3-c960-4bb1-9bd3-cb3a16a42066:
+            required: false
+            sortOrder: 1
+          a82943e1-676f-4fc2-96e6-12837039aa26:
+            required: false
+            sortOrder: 4
+        name: Content
+        sortOrder: 1
+fields:
+  08ce0776-1e88-4c42-bc2f-9e1fa1fa0943:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageColonne
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  0f3d9e61-4f43-41f2-967b-26be68d81df2:
+    contentColumnType: text
+    fieldGroup: null
+    handle: texteColonne
+    instructions: ''
+    name: Texte
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: '1'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  91c360b3-c960-4bb1-9bd3-cb3a16a42066:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titreColonne
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  a82943e1-676f-4fc2-96e6-12837039aa26:
+    contentColumnType: text
+    fieldGroup: null
+    handle: boutonColonne
+    instructions: ''
+    name: Bouton
+    searchable: true
+    settings:
+      selectionLabel: ' -- Select link type --'
+      types:
+        __assoc__:
+          -
+            - pRqPwu3n
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Entry
+                -
+                  - label
+                  - Page
+                -
+                  - showTarget
+                  - ''
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - sources
+                  -
+                    - 'section:89284804-33c3-44e7-b809-0e6bfac869bb'
+                    - 'section:aaa28725-19e7-408f-9a9d-a8bbfe69233f'
+                    - 'section:d15fc59b-198e-4462-baf3-aa56a46c4ccf'
+                    - singles
+                -
+                  - targetSiteId
+                  - null
+                -
+                  - viewMode
+                  - null
+                -
+                  - selectionLabel
+                  - ''
+                -
+                  - localizeRelations
+                  - ''
+          -
+            - g9NvTw3R
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Url
+                -
+                  - label
+                  - Url
+                -
+                  - showTarget
+                  - '1'
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - placeholder
+                  - 'Entrez une URL'
+                -
+                  - useUrlAsDefaultText
+                  - '1'
+                -
+                  - allowRelativeUrl
+                  - ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: flipbox\craft\link\fields\Link

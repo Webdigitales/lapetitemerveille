@@ -1,0 +1,18 @@
+contentColumnType: string
+fieldGroup: b7be47d6-258f-4559-be92-1cba6a6ca448
+handle: lienVersPage
+instructions: ''
+name: 'Lien vers page'
+searchable: true
+settings:
+  limit: ''
+  localizeRelations: ''
+  selectionLabel: 'Ajouter un lien vers une page'
+  source: null
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: ''
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

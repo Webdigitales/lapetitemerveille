@@ -1,0 +1,11 @@
+contentColumnType: boolean
+fieldGroup: 266d782a-b1d0-4145-8200-e428143f47f3
+handle: pageParent
+instructions: ''
+name: 'Page Parent ?'
+searchable: true
+settings:
+  default: ''
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\Lightswitch

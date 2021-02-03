@@ -1,0 +1,36 @@
+enableVersioning: true
+handle: monde
+name: Monde
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - Preview
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  3e688797-0718-4e03-a06c-6c0acf236e7b:
+    enabledByDefault: true
+    hasUrls: true
+    template: page/coming-soon
+    uriFormat: '{parent.uri}/{slug}'
+  84b6bb21-bdc2-41fb-b07a-7c343f7a7288:
+    enabledByDefault: true
+    hasUrls: true
+    template: page/coming-soon
+    uriFormat: '{parent.uri}/{slug}'
+  de5f043b-b6bd-4feb-89c2-c5e38cef6faf:
+    enabledByDefault: true
+    hasUrls: true
+    template: page/coming-soon
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 67fd5711-3173-4789-84ec-a0e7b81ab5d4
+type: structure

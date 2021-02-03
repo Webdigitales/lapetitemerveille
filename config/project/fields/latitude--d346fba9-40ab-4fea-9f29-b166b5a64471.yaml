@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: ecec799f-b757-4018-941b-e2c75c877471
+handle: latitude
+instructions: ''
+name: Latitude
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

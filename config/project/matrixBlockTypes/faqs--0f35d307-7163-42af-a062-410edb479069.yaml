@@ -1,0 +1,49 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  38e11c68-5bca-4a1a-851f-2e2a970e0804:
+    tabs:
+      -
+        fields:
+          f5242102-38de-40d7-a35f-75e1243e8cbe:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  f5242102-38de-40d7-a35f-75e1243e8cbe:
+    contentColumnType: string
+    fieldGroup: null
+    handle: faq
+    instructions: ''
+    name: FAQ
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - b1898d66-3c96-4fa9-a80b-14174dbf5ea6
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 78889b60-7389-477b-bc6e-c044ead36e2b
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_12_faq}}'
+      fieldLayout: matrix
+      maxRows: ''
+      minRows: '1'
+      propagationMethod: all
+      selectionLabel: 'Ajouter une FAQ'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: faqs
+name: FAQS
+sortOrder: 8

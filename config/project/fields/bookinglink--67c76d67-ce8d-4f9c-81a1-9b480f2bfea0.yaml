@@ -1,0 +1,76 @@
+contentColumnType: text
+fieldGroup: ce1eea5b-e955-4904-9a6d-c6bf03c9e09c
+handle: bookinglink
+instructions: ''
+name: 'Lien de réservation'
+searchable: true
+settings:
+  selectionLabel: ' -- Sélectionnez un type de lien --'
+  types:
+    __assoc__:
+      -
+        - gGnbTJpF
+        -
+          __assoc__:
+            -
+              - class
+              - flipbox\craft\link\types\Url
+            -
+              - label
+              - Url
+            -
+              - showTarget
+              - '1'
+            -
+              - allowText
+              - '1'
+            -
+              - requireText
+              - '1'
+            -
+              - placeholder
+              - ''
+            -
+              - useUrlAsDefaultText
+              - '1'
+            -
+              - allowRelativeUrl
+              - ''
+      -
+        - y6n3PK9Q
+        -
+          __assoc__:
+            -
+              - class
+              - flipbox\craft\link\types\Entry
+            -
+              - label
+              - 'Page interne'
+            -
+              - showTarget
+              - '1'
+            -
+              - allowText
+              - '1'
+            -
+              - requireText
+              - '1'
+            -
+              - sources
+              -
+                - 'section:d15fc59b-198e-4462-baf3-aa56a46c4ccf'
+            -
+              - targetSiteId
+              - null
+            -
+              - viewMode
+              - null
+            -
+              - selectionLabel
+              - ''
+            -
+              - localizeRelations
+              - ''
+translationKeyFormat: null
+translationMethod: site
+type: flipbox\craft\link\fields\Link

@@ -1,0 +1,174 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  4ccefebd-75bb-407c-9299-b9424e43bbc3:
+    tabs:
+      -
+        fields:
+          0b39679c-a901-47d6-bf2e-cf20538aae7d:
+            required: false
+            sortOrder: 2
+          8ea02813-8fae-44a3-a64d-f3282ec08195:
+            required: false
+            sortOrder: 1
+          92062b59-fe6f-49c0-ae12-c0a0d20fa192:
+            required: false
+            sortOrder: 4
+          e00f242e-2382-4342-9e13-a25cacc357b9:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  0b39679c-a901-47d6-bf2e-cf20538aae7d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: texteImageTexte
+    instructions: ''
+    name: Texte
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\redactor\Field
+  8ea02813-8fae-44a3-a64d-f3282ec08195:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titreImageTexte
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  92062b59-fe6f-49c0-ae12-c0a0d20fa192:
+    contentColumnType: text
+    fieldGroup: null
+    handle: bouton
+    instructions: ''
+    name: Bouton
+    searchable: true
+    settings:
+      selectionLabel: 'Choisissez un type de lien'
+      types:
+        __assoc__:
+          -
+            - Iai9qS48
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Entry
+                -
+                  - label
+                  - Entry
+                -
+                  - showTarget
+                  - '1'
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - sources
+                  -
+                    - 'section:89284804-33c3-44e7-b809-0e6bfac869bb'
+                    - 'section:aaa28725-19e7-408f-9a9d-a8bbfe69233f'
+                    - 'section:d15fc59b-198e-4462-baf3-aa56a46c4ccf'
+                    - singles
+                -
+                  - targetSiteId
+                  - null
+                -
+                  - viewMode
+                  - null
+                -
+                  - selectionLabel
+                  - 'Choisissez une page'
+                -
+                  - localizeRelations
+                  - ''
+          -
+            - gkuWrdwP
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Url
+                -
+                  - label
+                  - Url
+                -
+                  - showTarget
+                  - '1'
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - placeholder
+                  - 'Entrez une URL'
+                -
+                  - useUrlAsDefaultText
+                  - '1'
+                -
+                  - allowRelativeUrl
+                  - ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: flipbox\craft\link\fields\Link
+  e00f242e-2382-4342-9e13-a25cacc357b9:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageImageTexte
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: imageTexte
+name: 'Image + Texte'
+sortOrder: 3

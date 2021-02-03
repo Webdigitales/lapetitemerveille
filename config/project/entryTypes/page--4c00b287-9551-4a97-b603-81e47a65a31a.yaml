@@ -1,0 +1,37 @@
+fieldLayouts:
+  1ea5b926-ef2d-4433-88f1-a765a59b85c4:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 90e10643-7f18-492b-9868-6f8f394f8697
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f7e4b87b-a0f1-4605-96d3-07a55640216f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 1ad1fa2f-ff3d-4da5-8b01-d07110082775
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Général
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: c5ad5d5e-653f-4b32-ac93-039578cbb009
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Contenu
+        sortOrder: 2
+handle: page
+hasTitleField: true
+name: Page
+section: d15fc59b-198e-4462-baf3-aa56a46c4ccf
+sortOrder: 1
+titleFormat: ''

@@ -1,0 +1,8 @@
+baseUrl: '@web'
+handle: fr
+hasUrls: true
+language: fr
+name: 'Site FR (principal)'
+primary: true
+siteGroup: ae7f1562-48c8-4198-abed-56dd211f745e
+sortOrder: 1

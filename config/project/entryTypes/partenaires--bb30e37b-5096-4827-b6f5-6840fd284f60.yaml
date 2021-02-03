@@ -1,0 +1,25 @@
+fieldLayouts:
+  000263b7-4475-415f-9638-8e20b642b43b:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 7ce748c8-a445-475a-9687-77c4e2f32e81
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f4d8553d-2f89-4530-aecd-4e364c749ded
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: partenaires
+hasTitleField: true
+name: Partenaires
+section: 54d33ca7-760f-4c50-b09c-7930bdd9140a
+sortOrder: 1
+titleFormat: ''

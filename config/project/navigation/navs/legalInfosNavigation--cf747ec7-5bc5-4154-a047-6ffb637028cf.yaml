@@ -1,0 +1,9 @@
+handle: legalInfosNavigation
+instructions: ''
+maxNodes: ''
+name: 'Legal infos navigation'
+propagateNodes: true
+sortOrder: 4
+structure:
+  maxLevels: null
+  uid: c5b9f7e8-1633-4019-96ac-1c9f4ddc0712

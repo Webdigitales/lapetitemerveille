@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: ecec799f-b757-4018-941b-e2c75c877471
+handle: capacity
+instructions: ''
+name: 'Nombre de personnes'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

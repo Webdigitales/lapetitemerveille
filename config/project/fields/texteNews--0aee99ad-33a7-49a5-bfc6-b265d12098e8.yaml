@@ -1,0 +1,23 @@
+contentColumnType: text
+fieldGroup: 94636160-e0db-4242-a71e-c1080db25792
+handle: texteNews
+instructions: ''
+name: Texte
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - eff0dab7-b33f-4b25-bd91-d98f373e8131
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: ''
+  redactorConfig: Standard.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: language
+type: craft\redactor\Field

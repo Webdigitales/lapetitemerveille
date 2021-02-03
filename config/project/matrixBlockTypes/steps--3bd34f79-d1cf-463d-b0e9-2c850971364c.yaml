@@ -1,0 +1,77 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  1c4fb73e-9a40-4161-9b1d-a827d716ca2d:
+    tabs:
+      -
+        fields:
+          82c733f5-e64e-4c63-9669-1fcecbea928d:
+            required: false
+            sortOrder: 1
+          b7bb9098-e6ac-4442-909d-c493169083ad:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  82c733f5-e64e-4c63-9669-1fcecbea928d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: sectionTitle
+    instructions: ''
+    name: 'Titre de section'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  b7bb9098-e6ac-4442-909d-c493169083ad:
+    contentColumnType: string
+    fieldGroup: null
+    handle: step
+    instructions: ''
+    name: Étape
+    searchable: true
+    settings:
+      columns:
+        __assoc__:
+          -
+            - dcd0e45f-f4fe-495f-ae73-df36efb0f63c
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - e1752790-6319-40ef-a732-df5a0c5a70b8
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+          -
+            - 5d947b98-9099-494a-a2c0-4216886c7338
+            -
+              __assoc__:
+                -
+                  - width
+                  - ''
+      contentTable: '{{%stc_10_step}}'
+      fieldLayout: matrix
+      maxRows: '3'
+      minRows: '1'
+      propagationMethod: all
+      selectionLabel: 'Ajouter une étape'
+      staticField: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: verbb\supertable\fields\SuperTableField
+handle: steps
+name: Étapes
+sortOrder: 7

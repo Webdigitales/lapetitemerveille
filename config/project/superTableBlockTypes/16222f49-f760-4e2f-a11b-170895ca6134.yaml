@@ -1,0 +1,135 @@
+field: b7bb9098-e6ac-4442-909d-c493169083ad
+fieldLayouts:
+  35084e05-dcb1-41e9-9d0b-862043394600:
+    tabs:
+      -
+        fields:
+          5d947b98-9099-494a-a2c0-4216886c7338:
+            required: false
+            sortOrder: 3
+          dcd0e45f-f4fe-495f-ae73-df36efb0f63c:
+            required: false
+            sortOrder: 1
+          e1752790-6319-40ef-a732-df5a0c5a70b8:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  5d947b98-9099-494a-a2c0-4216886c7338:
+    contentColumnType: text
+    fieldGroup: null
+    handle: stepButton
+    instructions: ''
+    name: Bouton
+    searchable: true
+    settings:
+      selectionLabel: ' -- Sélectionner un type de lien --'
+      types:
+        __assoc__:
+          -
+            - tvXfJttK
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Entry
+                -
+                  - label
+                  - 'Page interne'
+                -
+                  - showTarget
+                  - '1'
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - sources
+                  - '*'
+                -
+                  - targetSiteId
+                  - null
+                -
+                  - viewMode
+                  - null
+                -
+                  - selectionLabel
+                  - ''
+                -
+                  - localizeRelations
+                  - ''
+          -
+            - bQB0ZvXd
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Url
+                -
+                  - label
+                  - Url
+                -
+                  - showTarget
+                  - '1'
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - placeholder
+                  - ''
+                -
+                  - useUrlAsDefaultText
+                  - '1'
+                -
+                  - allowRelativeUrl
+                  - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: flipbox\craft\link\fields\Link
+  dcd0e45f-f4fe-495f-ae73-df36efb0f63c:
+    contentColumnType: text
+    fieldGroup: null
+    handle: stepTitle
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  e1752790-6319-40ef-a732-df5a0c5a70b8:
+    contentColumnType: text
+    fieldGroup: null
+    handle: steptext
+    instructions: ''
+    name: Texte
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field

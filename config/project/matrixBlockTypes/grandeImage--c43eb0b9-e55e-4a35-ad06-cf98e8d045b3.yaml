@@ -1,0 +1,44 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  8bd66942-e37a-4af9-b1e0-d9338c6f09cb:
+    tabs:
+      -
+        fields:
+          2e095ecc-72ae-421c-bbaa-4c9f4bb55f30:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  2e095ecc-72ae-421c-bbaa-4c9f4bb55f30:
+    contentColumnType: string
+    fieldGroup: null
+    handle: grandeimage
+    instructions: ''
+    name: grandeImage
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: grandeImage
+name: 'Grande Image'
+sortOrder: 5

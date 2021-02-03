@@ -1,0 +1,9 @@
+format: jpg
+handle: sliderSmall
+height: 600
+interlace: none
+mode: crop
+name: 'Petit Slider'
+position: center-center
+quality: null
+width: 800

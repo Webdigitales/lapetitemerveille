@@ -1,0 +1,89 @@
+fieldLayouts:
+  97d2f061-97c0-4e88-bd91-9f8cc631f942:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: f7e4b87b-a0f1-4605-96d3-07a55640216f
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 7ce748c8-a445-475a-9687-77c4e2f32e81
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 1ad1fa2f-ff3d-4da5-8b01-d07110082775
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Général
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 0aee99ad-33a7-49a5-bfc6-b265d12098e8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Contenu
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: faf0f324-c747-46f4-bc01-c4eca141da00
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Galerie photos'
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: e235e38e-5f54-456a-8d7b-df2e7576719a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Tickets
+        sortOrder: 4
+      -
+        elements:
+          -
+            fieldUid: 68e55cec-14aa-4260-93ff-d3567cff2afa
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 118c6994-44bf-4930-9cb9-d4333989adfb
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 775006d6-7318-43d0-8861-80559b0f28f5
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Sidebar
+        sortOrder: 5
+      -
+        elements:
+          -
+            fieldUid: d346fba9-40ab-4fea-9f29-b166b5a64471
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4f0111f1-68c4-4445-a2c9-99aec438b65c
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 538e553a-832b-4fdf-8bdd-df079ea85c46
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 48ded399-33ff-4fa5-84b3-eb75c8d8d54b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Map
+        sortOrder: 6
+handle: pack
+hasTitleField: true
+name: Package
+section: 2abc0dfb-ffe2-488d-bab3-780b03da640c
+sortOrder: 1
+titleFormat: ''

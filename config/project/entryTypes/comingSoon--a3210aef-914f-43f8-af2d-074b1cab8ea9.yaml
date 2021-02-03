@@ -1,0 +1,7 @@
+handle: comingSoon
+hasTitleField: false
+name: 'Coming soon'
+section: 03740594-ac0a-4296-9c57-8c0c7684cd00
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: null

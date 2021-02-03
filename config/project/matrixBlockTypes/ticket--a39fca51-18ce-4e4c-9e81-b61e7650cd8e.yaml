@@ -1,0 +1,80 @@
+field: e235e38e-5f54-456a-8d7b-df2e7576719a
+fieldLayouts:
+  91a1503e-4064-44e2-b229-e0bf252dde38:
+    tabs:
+      -
+        fields:
+          98dec2c6-4527-43d9-bc27-99e399f3aa60:
+            required: false
+            sortOrder: 3
+          9fb04f3b-a3fc-47e7-8423-72af56467862:
+            required: false
+            sortOrder: 1
+          f95ab444-e2d0-4c44-acf7-36f2474f3315:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  98dec2c6-4527-43d9-bc27-99e399f3aa60:
+    contentColumnType: text
+    fieldGroup: null
+    handle: price
+    instructions: ''
+    name: Prix
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  9fb04f3b-a3fc-47e7-8423-72af56467862:
+    contentColumnType: text
+    fieldGroup: null
+    handle: ticketTitle
+    instructions: ''
+    name: 'Nom du ticket'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\PlainText
+  f95ab444-e2d0-4c44-acf7-36f2474f3315:
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\redactor\Field
+handle: ticket
+name: Ticket
+sortOrder: 1

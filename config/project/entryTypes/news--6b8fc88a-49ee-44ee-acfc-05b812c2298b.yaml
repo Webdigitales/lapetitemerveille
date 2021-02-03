@@ -1,0 +1,25 @@
+fieldLayouts:
+  9944273a-2d8f-4a71-9084-092951ef4d7d:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Titre
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 68e55cec-14aa-4260-93ff-d3567cff2afa
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0aee99ad-33a7-49a5-bfc6-b265d12098e8
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Tab 1'
+        sortOrder: 1
+handle: news
+hasTitleField: true
+name: News
+section: 89284804-33c3-44e7-b809-0e6bfac869bb
+sortOrder: 1
+titleFormat: ''

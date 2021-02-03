@@ -1,0 +1,17 @@
+contentColumnType: string(620)
+fieldGroup: ecec799f-b757-4018-941b-e2c75c877471
+handle: transport
+instructions: ''
+name: 'Moyen de transport le plus proche'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 155
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\PlainText

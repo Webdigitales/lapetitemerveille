@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: 81d0e628-aea8-479b-a95f-077bc7d85acc
+handle: lien
+instructions: ''
+name: Lien
+searchable: true
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\Url

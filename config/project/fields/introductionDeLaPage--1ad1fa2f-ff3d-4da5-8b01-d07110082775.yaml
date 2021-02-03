@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 81d0e628-aea8-479b-a95f-077bc7d85acc
+handle: introductionDeLaPage
+instructions: 'Remplissez ce champs avec un texte qui décrit brièvement la page'
+name: 'Introduction de la page'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '3'
+  multiline: '1'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: language
+type: craft\fields\PlainText

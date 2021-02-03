@@ -1,0 +1,27 @@
+contentColumnType: string
+fieldGroup: 81d0e628-aea8-479b-a95f-077bc7d85acc
+handle: gallery
+instructions: ''
+name: 'Galerie photos'
+searchable: true
+settings:
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: '1'
+  restrictFiles: ''
+  selectionLabel: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: 84b6bb21-bdc2-41fb-b07a-7c343f7a7288
+  useSingleFolder: false
+  validateRelatedElements: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

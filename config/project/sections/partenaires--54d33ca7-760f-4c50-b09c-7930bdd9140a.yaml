@@ -1,0 +1,36 @@
+enableVersioning: true
+handle: partenaires
+name: Partenaires
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Page entrée primaire'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  3e688797-0718-4e03-a06c-6c0acf236e7b:
+    enabledByDefault: true
+    hasUrls: true
+    template: ''
+    uriFormat: 'partenaires/{slug}'
+  84b6bb21-bdc2-41fb-b07a-7c343f7a7288:
+    enabledByDefault: true
+    hasUrls: true
+    template: ''
+    uriFormat: 'partenaires/{slug}'
+  de5f043b-b6bd-4feb-89c2-c5e38cef6faf:
+    enabledByDefault: true
+    hasUrls: true
+    template: ''
+    uriFormat: 'partenaires/{slug}'
+structure:
+  maxLevels: null
+  uid: 7c2c191d-5d22-4c89-8005-b609302d04a7
+type: structure

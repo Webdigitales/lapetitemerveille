@@ -1,0 +1,22 @@
+contentColumnType: text
+fieldGroup: 81d0e628-aea8-479b-a95f-077bc7d85acc
+handle: texte
+instructions: ''
+name: Texte
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: language
+type: craft\redactor\Field

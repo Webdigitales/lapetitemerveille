@@ -1,0 +1,96 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  4dfbd996-a2f6-4454-8250-91a80c4ff2f3:
+    tabs:
+      -
+        fields:
+          084f6562-7592-4b20-b133-4f643016ce60:
+            required: false
+            sortOrder: 4
+          1a1303e4-39c9-4e40-a7c8-e52a9cd0bb88:
+            required: false
+            sortOrder: 1
+          bca2ed0f-b69a-4f6e-ab9a-e7f7bf8a515d:
+            required: false
+            sortOrder: 3
+          eb588270-9789-47a8-bb85-6cc524d510df:
+            required: false
+            sortOrder: 2
+        name: Content
+        sortOrder: 1
+fields:
+  084f6562-7592-4b20-b133-4f643016ce60:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: lienDuBouton
+    instructions: ''
+    name: 'Lien du bouton'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\Url
+  1a1303e4-39c9-4e40-a7c8-e52a9cd0bb88:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titreTexteCentre
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  bca2ed0f-b69a-4f6e-ab9a-e7f7bf8a515d:
+    contentColumnType: text
+    fieldGroup: null
+    handle: texteDuBoutonTexteCentre
+    instructions: ''
+    name: 'Texte du bouton'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'En savoir plus'
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+  eb588270-9789-47a8-bb85-6cc524d510df:
+    contentColumnType: text
+    fieldGroup: null
+    handle: texteTexteCentre
+    instructions: ''
+    name: Texte
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\redactor\Field
+handle: texteCentre
+name: 'Texte centré'
+sortOrder: 1

@@ -1,0 +1,8 @@
+baseUrl: '@web/nl/'
+handle: nl
+hasUrls: true
+language: nl
+name: 'Site NL'
+primary: false
+siteGroup: ae7f1562-48c8-4198-abed-56dd211f745e
+sortOrder: 2

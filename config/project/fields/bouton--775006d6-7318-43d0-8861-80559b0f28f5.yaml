@@ -1,0 +1,79 @@
+contentColumnType: text
+fieldGroup: 81d0e628-aea8-479b-a95f-077bc7d85acc
+handle: bouton
+instructions: ''
+name: Bouton
+searchable: true
+settings:
+  selectionLabel: ' -- Choisissez un type de lien  --'
+  types:
+    __assoc__:
+      -
+        - R3HbuSQG
+        -
+          __assoc__:
+            -
+              - class
+              - flipbox\craft\link\types\Entry
+            -
+              - label
+              - Page
+            -
+              - showTarget
+              - ''
+            -
+              - allowText
+              - '1'
+            -
+              - requireText
+              - '1'
+            -
+              - sources
+              -
+                - 'section:89284804-33c3-44e7-b809-0e6bfac869bb'
+                - 'section:aaa28725-19e7-408f-9a9d-a8bbfe69233f'
+                - 'section:d15fc59b-198e-4462-baf3-aa56a46c4ccf'
+                - singles
+            -
+              - targetSiteId
+              - null
+            -
+              - viewMode
+              - null
+            -
+              - selectionLabel
+              - ''
+            -
+              - localizeRelations
+              - ''
+      -
+        - IqnMqrLI
+        -
+          __assoc__:
+            -
+              - class
+              - flipbox\craft\link\types\Url
+            -
+              - label
+              - Url
+            -
+              - showTarget
+              - '1'
+            -
+              - allowText
+              - '1'
+            -
+              - requireText
+              - '1'
+            -
+              - placeholder
+              - ''
+            -
+              - useUrlAsDefaultText
+              - '1'
+            -
+              - allowRelativeUrl
+              - ''
+translationKeyFormat: null
+translationMethod: language
+type: flipbox\craft\link\fields\Link

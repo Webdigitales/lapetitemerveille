@@ -1,0 +1,174 @@
+field: c5ad5d5e-653f-4b32-ac93-039578cbb009
+fieldLayouts:
+  34e90fcd-03d4-45b3-8651-fd5444229cf4:
+    tabs:
+      -
+        fields:
+          80473810-a358-49d3-a378-f44bec2557de:
+            required: false
+            sortOrder: 3
+          c5aa34d5-bc14-48d6-b326-adc7ede8800e:
+            required: false
+            sortOrder: 4
+          c87389fc-c199-41e6-9cb4-1204a8abc8f1:
+            required: false
+            sortOrder: 2
+          eac39b3f-c56a-47ef-a801-5eb4e38f62a9:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  80473810-a358-49d3-a378-f44bec2557de:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imagetexteImage
+    instructions: ''
+    name: Image
+    searchable: true
+    settings:
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: ''
+      restrictFiles: '1'
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:eff0dab7-b33f-4b25-bd91-d98f373e8131'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  c5aa34d5-bc14-48d6-b326-adc7ede8800e:
+    contentColumnType: text
+    fieldGroup: null
+    handle: boutontexteImage
+    instructions: ''
+    name: Bouton
+    searchable: true
+    settings:
+      selectionLabel: ' -- Select link type --'
+      types:
+        __assoc__:
+          -
+            - XRHuTwsf
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Entry
+                -
+                  - label
+                  - Entry
+                -
+                  - showTarget
+                  - '1'
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - sources
+                  -
+                    - 'section:89284804-33c3-44e7-b809-0e6bfac869bb'
+                    - 'section:aaa28725-19e7-408f-9a9d-a8bbfe69233f'
+                    - 'section:d15fc59b-198e-4462-baf3-aa56a46c4ccf'
+                    - singles
+                -
+                  - targetSiteId
+                  - null
+                -
+                  - viewMode
+                  - null
+                -
+                  - selectionLabel
+                  - 'Choisir page'
+                -
+                  - localizeRelations
+                  - ''
+          -
+            - cU4tIElF
+            -
+              __assoc__:
+                -
+                  - class
+                  - flipbox\craft\link\types\Url
+                -
+                  - label
+                  - Url
+                -
+                  - showTarget
+                  - '1'
+                -
+                  - allowText
+                  - '1'
+                -
+                  - requireText
+                  - '1'
+                -
+                  - placeholder
+                  - 'Entrez l''url'
+                -
+                  - useUrlAsDefaultText
+                  - '1'
+                -
+                  - allowRelativeUrl
+                  - ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: flipbox\craft\link\fields\Link
+  c87389fc-c199-41e6-9cb4-1204a8abc8f1:
+    contentColumnType: text
+    fieldGroup: null
+    handle: texteTexteImage
+    instructions: ''
+    name: Texte
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\redactor\Field
+  eac39b3f-c56a-47ef-a801-5eb4e38f62a9:
+    contentColumnType: text
+    fieldGroup: null
+    handle: titreTexteImage
+    instructions: ''
+    name: Titre
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: language
+    type: craft\fields\PlainText
+handle: texteImage
+name: 'Texte + Image'
+sortOrder: 2

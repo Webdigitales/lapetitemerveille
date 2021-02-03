@@ -1,0 +1,12 @@
+fieldLayouts:
+  dac78555-09a6-42f7-a212-adf6c3cbf327:
+    tabs:
+      -
+        fields:
+          67c76d67-ce8d-4f9c-81a1-9b480f2bfea0:
+            required: false
+            sortOrder: 1
+        name: 'Tab 1'
+        sortOrder: 1
+handle: globalInfos
+name: 'Infos générales'
