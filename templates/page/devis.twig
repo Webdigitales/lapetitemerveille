@@ -22,7 +22,7 @@
                                     <form class="form form--devis" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
                                         {{ csrfInput() }}
                                         <input type="hidden" name="action" value="contact-form/send">
-                                        <input type="hidden" name="prependSubject" value="{{ entry.heading|hash }}">
+                                        <input type="hidden" name="prependSubject" value="{{ entry.titre|hash }}">
                                         {{ redirectInput('confirmation-devis') }}
 
                                         <div class="flex flex-wrap mb-1">
