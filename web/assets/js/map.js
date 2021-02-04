@@ -16,7 +16,7 @@
                             "hue": "#002525"
                         },
                         {
-                            "saturation": -79
+                            "saturation": -20
                         }
                     ]
                 },
@@ -24,7 +24,7 @@
                     "featureType": "poi",
                     "stylers": [
                         {
-                            "saturation": -78
+                            "saturation": -20
                         },
                         {
                             "hue": "#002525"
@@ -62,7 +62,7 @@
                     "featureType": "water",
                     "stylers": [
                         {
-                            "saturation": -65
+                            "saturation": -20
                         },
                         {
                             "hue": "#002525"
@@ -101,7 +101,7 @@
                     "featureType": "transit.line",
                     "stylers": [
                         {
-                            "saturation": -72
+                            "saturation": -20
                         }
                     ]
                 },
