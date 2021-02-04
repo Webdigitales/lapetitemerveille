@@ -13,7 +13,7 @@
                     "featureType": "road",
                     "stylers": [
                         {
-                            "hue": "#5e00ff"
+                            "hue": "#002525"
                         },
                         {
                             "saturation": -79
@@ -27,7 +27,7 @@
                             "saturation": -78
                         },
                         {
-                            "hue": "#6600ff"
+                            "hue": "#002525"
                         },
                         {
                             "lightness": -47
@@ -49,7 +49,7 @@
                     "featureType": "landscape",
                     "stylers": [
                         {
-                            "hue": "#6600ff"
+                            "hue": "#002525"
                         },
                         {
                             "saturation": -11
@@ -65,7 +65,7 @@
                             "saturation": -65
                         },
                         {
-                            "hue": "#1900ff"
+                            "hue": "#002525"
                         },
                         {
                             "lightness": 8
@@ -90,7 +90,7 @@
                             "visibility": "simplified"
                         },
                         {
-                            "hue": "#5e00ff"
+                            "hue": "#002525"
                         },
                         {
                             "saturation": -16

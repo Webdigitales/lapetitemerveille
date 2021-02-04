@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "626a4dd872c59088ee40b8d00635fa29",
+    "content-hash": "846172ea84d4913ab9c2390bb5715779",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1191,6 +1191,90 @@
                 "rss": "https://github.com/flipboxfactory/craft-link/commits/master.atom"
             },
             "time": "2019-06-17T20:30:46+00:00"
+        },
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "8.12.17",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/d914436bd646e9d645e7f8ac6644bf7e33a023d4",
+                "reference": "d914436bd646e9d645e7f8ac6644bf7e33a023d4",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/locale": "^1.7",
+                "php": ">=5.3.2",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "libphonenumber\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/src/data/",
+                    "/src/carrier/data/",
+                    "/src/geocoding/data/",
+                    "/src/timezone/data/"
+                ]
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "time": "2021-01-27T19:06:58+00:00"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "1.9",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/b07f1eace8072ccc61445ad8fbd493ff9d783043",
+                "reference": "b07f1eace8072ccc61445ad8fbd493ff9d783043",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "http://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "time": "2020-07-07T11:16:24+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3149,6 +3233,57 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "rynpsc/craft-phone-number",
+            "version": "1.4.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rynpsc/craft-phone-number/zipball/05587680ad97aee144aa4d07fffd0c00d10d1b7c",
+                "reference": "05587680ad97aee144aa4d07fffd0c00d10d1b7c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.4.0-RC1",
+                "giggsey/libphonenumber-for-php": "^8.9"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Phone Number",
+                "handle": "phone-number",
+                "class": "rynpsc\\phonenumber\\PhoneNumber",
+                "changelogUrl": "https://raw.githubusercontent.com/rynpsc/craft-phone-number/master/CHANGELOG.md",
+                "downloadUrl": "https://github.com/rynpsc/craft-phone-number/archive/master.zip"
+            },
+            "autoload": {
+                "psr-4": {
+                    "rynpsc\\phonenumber\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ryan Pascoe",
+                    "homepage": "https://www.ryanpascoe.co"
+                }
+            ],
+            "description": "International phone number field.",
+            "keywords": [
+                "cms",
+                "craftcms",
+                "libphonenumber",
+                "number",
+                "phone",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/rynpsc/craft-phone-number/issues?state=open",
+                "source": "https://github.com/rynpsc/craft-phone-number",
+                "docs": "https://github.com/rynpsc/craft-phone-number"
+            },
+            "time": "2021-01-27T19:20:39+00:00"
         },
         {
             "name": "sebastian/diff",

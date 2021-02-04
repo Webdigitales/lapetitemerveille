@@ -1,0 +1,11 @@
+contentColumnType: string
+fieldGroup: ce1eea5b-e955-4904-9a6d-c6bf03c9e09c
+handle: phone
+instructions: ''
+name: Téléphone
+searchable: false
+settings:
+  defaultRegion: BE
+translationKeyFormat: null
+translationMethod: none
+type: rynpsc\phonenumber\fields\PhoneNumberField
