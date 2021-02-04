@@ -1459,6 +1459,20 @@ h2 {
     }
 }
 
+.sales {
+    margin-bottom: 3rem !important;
+    
+    .sidebar__footer {
+        justify-content: center;
+        
+        .col {
+            & + .col {
+                flex: 0 1 auto;
+            }
+        }
+    }
+}
+
 .coming-soon {
     display: flex;
     justify-content: center;
@@ -1640,5 +1654,11 @@ textarea {
                 margin-top: 0 !important;
             }
         }
+    }
+}
+
+.sales {
+    .sales__content {
+        text-align: center;
     }
 }
