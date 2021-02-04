@@ -26,7 +26,7 @@
         {% if entry.pageParent %}
             <div class="destinations" data-aos="fade-up">
                 <div class="part">
-                    {% set entries = craft.entries.section('monde').level(2).descendantOf(entry.id) %}
+                    {% set entries = craft.entries.section('department').level(2).descendantOf(entry.id) %}
                     <div class="container-fluid">
                         <div class="row">
                             {% for entry in entries.all() %}
@@ -100,7 +100,7 @@
 
             {% include '_includes/matrix.twig' %}
 
-            {% set areas = craft.entries.section('monde').level(3).descendantOf(entry.id) %}
+            {% set areas = craft.entries.section('department').level(3).descendantOf(entry.id) %}
         {% if areas|length %}
             <section class="destinations" data-aos="fade-up">
                 <div class="container-fluid">
