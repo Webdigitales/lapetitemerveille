@@ -41,7 +41,7 @@
                     "featureType": "road.local",
                     "stylers": [
                         {
-                            "lightness": 22
+                            "lightness": 0
                         }
                     ]
                 },
@@ -79,7 +79,7 @@
                             "weight": 1.3
                         },
                         {
-                            "lightness": 30
+                            "lightness": 0
                         }
                     ]
                 },
