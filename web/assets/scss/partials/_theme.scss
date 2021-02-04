@@ -1624,3 +1624,11 @@ textarea {
 .px-1 {
     padding: 0 1rem;
 }
+
+.col-lg-8 {
+    .textimage {
+        .textimage__content {
+            padding: 0;
+        }
+    }
+}
