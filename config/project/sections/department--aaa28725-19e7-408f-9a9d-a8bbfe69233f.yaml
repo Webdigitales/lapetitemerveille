@@ -1,6 +1,6 @@
 enableVersioning: true
-handle: monde
-name: Monde
+handle: department
+name: Départements
 previewTargets:
   -
     __assoc__:
