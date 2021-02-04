@@ -1045,7 +1045,7 @@ h2 {
                 }
                 
                 @media (min-width: 992px) {
-                    flex: 1 1 25%;
+                    flex: 0 1 auto;
                 }
                 
                 &.item--button {
@@ -1067,7 +1067,13 @@ h2 {
                     }
                     
                     @media (min-width: 992px) {
-                        flex: 0 1 25%;
+                        flex: 1 1 auto;
+                        display: flex;
+                        justify-content: flex-end;
+                        
+                        .btn {
+                            max-width: 200px;
+                        }
                     }
                 }
                 
