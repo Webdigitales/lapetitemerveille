@@ -855,7 +855,7 @@ h2 {
         &:hover {
             .article__title {
                 &:before {
-                    background-color: rgba(84, 7, 105, 0.55);
+                    background-color: rgba(155, 191, 219, .55);
                 }
             }
         }
@@ -1023,7 +1023,7 @@ h2 {
             padding: 0;
             margin-top: -2rem;
             align-items: center;
-            background-image: linear-gradient(134deg, #EC9EDD 0%, #DF74C8 100%);
+            background: $primary;
             
             @media (min-width: 1200px) {
                 height: 4rem;
@@ -1051,6 +1051,15 @@ h2 {
                 &.item--button {
                     margin-top: 1rem;
                     padding: 0;
+                    
+                    .btn-primary {
+                        background-color: rgba(155, 191, 219, 1.000) !important;
+                        color: #fff !important;
+                        
+                        &:hover {
+                            background-color: $primary !important;
+                        }
+                    }
                     
                     @media (min-width: 768px) {
                         flex: 1 1 100%;
