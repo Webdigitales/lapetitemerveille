@@ -58,7 +58,10 @@ settings:
             -
               - sources
               -
+                - 'section:3876e609-694d-4eb0-9d5d-07053610b3ce'
+                - 'section:aaa28725-19e7-408f-9a9d-a8bbfe69233f'
                 - 'section:d15fc59b-198e-4462-baf3-aa56a46c4ccf'
+                - singles
             -
               - targetSiteId
               - null
