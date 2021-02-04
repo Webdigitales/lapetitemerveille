@@ -46,9 +46,9 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 805830ad-0fe4-4b9d-8a8e-cbe831914644
-            instructions: null
-            label: null
-            required: true
+            instructions: ''
+            label: ''
+            required: ''
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
@@ -128,4 +128,4 @@ section: 5babcc08-e86b-49bd-977e-fddfdc2297f8
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: ''
+titleTranslationMethod: none
