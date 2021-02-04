@@ -7,7 +7,7 @@
   'Subscribe' => "Subscribe",
   'newsletterPlaceholder' => "Email address",
   'Activities' => "Activities",
-  'The Worlds' => "Destinations",
+  'Departments' => "Departments",
   'Packs' => "Accommodations",
   'Accommodations' => "Accommodations",
   'Previous Page' => "Previous page",

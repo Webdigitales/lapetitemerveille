@@ -9,7 +9,7 @@
     'Subscribe' => "Subscribe",
     'newsletterPlaceholder' => "E-mailadres",
     'Activities' => "Activiteiten",
-    'The Worlds' => "Bestemmingen",
+    'Departments' => "Departments",
     'Packs' => "Accommodatie",
     'Accommodations' => "Accommodatie",
     'Previous Page' => "Precent",
