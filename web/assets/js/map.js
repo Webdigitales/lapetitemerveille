@@ -16,7 +16,7 @@
                             "hue": "#002525"
                         },
                         {
-                            "saturation": -20
+                            "saturation": 0
                         }
                     ]
                 },
@@ -24,13 +24,13 @@
                     "featureType": "poi",
                     "stylers": [
                         {
-                            "saturation": -20
+                            "saturation": 0
                         },
                         {
                             "hue": "#002525"
                         },
                         {
-                            "lightness": -47
+                            "lightness": 0
                         },
                         {
                             "visibility": "off"
@@ -52,7 +52,7 @@
                             "hue": "#002525"
                         },
                         {
-                            "saturation": -11
+                            "saturation": 0
                         }
                     ]
                 },
@@ -62,7 +62,7 @@
                     "featureType": "water",
                     "stylers": [
                         {
-                            "saturation": -20
+                            "saturation": 0
                         },
                         {
                             "hue": "#002525"
@@ -93,7 +93,7 @@
                             "hue": "#002525"
                         },
                         {
-                            "saturation": -16
+                            "saturation": 0
                         }
                     ]
                 },
@@ -101,7 +101,7 @@
                     "featureType": "transit.line",
                     "stylers": [
                         {
-                            "saturation": -20
+                            "saturation": 0
                         }
                     ]
                 },
