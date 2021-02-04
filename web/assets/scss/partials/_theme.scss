@@ -1634,5 +1634,11 @@ textarea {
     
     .content__main {
         padding-top: 0 !important;
+        
+        > .part {
+            .l-title:first-child {
+                margin-top: 0 !important;
+            }
+        }
     }
 }
