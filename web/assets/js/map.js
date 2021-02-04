@@ -68,7 +68,7 @@
                             "hue": "#002525"
                         },
                         {
-                            "lightness": 8
+                            "lightness": 0
                         }
                     ]
                 },
