@@ -57,25 +57,16 @@
                             <ul class="top-content__infos list">
                                 {% if entry.date|length %}
                                     <li class="list__item">
-                                        <svg class="icon icon--calenar">
-                                            <use xlink:href="/assets/img/svg-sprite.svg#calendar"></use>
-                                        </svg>
                                         <span class="infos__text">{{ entry.date }}</span>
                                     </li>
                                 {% endif %}
                                 {% if entry.transport|length %}
                                     <li class="list__item">
-                                        <svg class="icon icon--train">
-                                            <use xlink:href="/assets/img/svg-sprite.svg#train"></use>
-                                        </svg>
                                         <span class="infos__text">{{ entry.transport }}</span>
                                     </li>
                                 {% endif %}
                                 {% if entry.capacity|length %}
                                     <li class="list__item">
-                                        <svg class="icon icon--users">
-                                            <use xlink:href="/assets/img/svg-sprite.svg#users"></use>
-                                        </svg>
                                         <span class="infos__text">{{ entry.capacity }}</span>
                                     </li>
                                 {% endif %}
