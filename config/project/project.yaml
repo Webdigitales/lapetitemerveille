@@ -1,7 +1,11 @@
-dateModified: 1612512092
+dateModified: 1612516125
 email:
-  fromEmail: douffetphilippe@gmail.com
+  fromEmail: jtrompette@webdigitales.be
   fromName: 'La Petite Merveille'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    command: ''
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
   admin-bar:
@@ -46,7 +50,7 @@ plugins:
       prependSender: 'De la part de'
       prependSubject: 'New message from Site FR (principal)'
       successFlashMessage: 'Votre message a été envoyé.'
-      toEmail: dev@webdigitales.be
+      toEmail: jtrompette@webdigitales.be
   contact-form-honeypot:
     edition: standard
     enabled: true
