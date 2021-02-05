@@ -238,6 +238,48 @@
 		</div>
 	</footer>
 </div>
+{% set popup = craft.app.globals.getSetByHandle('popup') %}
+{% if popup|length %}
+    <div id="cookieModal" style="display: none;" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center" data-modal="cookie_modal">
+        <div class="modal-container bg-white w-11/12 md:max-w-lg mx-auto rounded shadow-lg z-50 overflow-y-auto">
+            <!--Title-->
+            <div class="flex justify-end items-center mt-1 mr-1">
+                <div class="modal-close cursor-pointer z-51" data-modal="cookie_modal">
+                    <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-content p-2 text-left">
+                <!--Body-->
+                {% if popup.imageHero|length %}
+                    <div class="part m-0 mb-1 p-0" data-aos="fade-up">
+                        {% for image in popup.imageHero.all() %}
+                            <img src="{{ image.url('col12') }}" alt="{{ image.title }}"
+                                 width="{{ image.getWidth('col12') }}" height="{{ image.getHeight('col12') }}">
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                {% if popup.texte|length %}
+                    <div class="text">
+                        {{ popup.texte }}
+                    </div>
+                {% endif %}
+
+                {% if popup.bouton|length %}
+                    <!--Footer-->
+                    <div class="flex justify-start mt-2">
+                        <span class="btn">
+                        {{ popup.bouton|raw }}
+                        </span>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="modal-overlay absolute w-full h-full bg-black opacity-50" data-modal="cookie_modal"></div>
+    </div>
+{% endif %}
 <script src="/assets/js/vendor/modernizr-3.8.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
 				integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -245,6 +287,7 @@
 <script async defer
 				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd7xw5sOom9O6v5MPjOuPzfz5gvSnrBBc&callback=initMap"></script>
 <script src="/assets/js/vendor/jquery.meanmenu.js"></script>
+<script src="/assets/js/vendor/js.cookie.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
