@@ -27,6 +27,22 @@
 {% do seomatic.script.get('googleTagManager').include(true) %}
 <div class="site-wrapper">
 	{{ adminbar({ entry: entry }) }}
+    {% set globalInfos = craft.app.globals.getSetByHandle('globalInfos') %}
+    {% if globalInfos|length %}
+        {% if globalInfos.titre|length %}
+            <div class="site-flashnews flashnews">
+                {% if globalInfos.bouton.url|length %}
+                <a href="{{ globalInfos.bouton.url }}" class="flashnews__link link--wrapper">
+                    {% endif %}
+                    <div class="flashnews__content">
+                        <p class="flashnews__message">{{ globalInfos.titre }}</p>
+                    </div>
+                    {% if globalInfos.bouton.url|length %}
+                </a>
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endif %}
 	<div class="site-top-bar top-bar">
 		<div class="container-fluid">
 			<div class="top-bar__content">

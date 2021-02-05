@@ -355,7 +355,7 @@ img {
     align-items: center;
     justify-content: center;
     position: relative;
-    height: calc(100vh - 113px);
+    height: 400px;
     
     .hero--home__content {
         position: absolute;
@@ -475,6 +475,10 @@ section {
         &:hover {
             color: $primary-lighter;
         }
+    }
+    
+    strong {
+        font-weight: 600;
     }
 }
 
@@ -851,6 +855,12 @@ h2 {
     
     a {
         position: relative;
+    
+        .article__title {
+            &:before {
+                background-color: rgba($primary, .3);
+            }
+        }
         
         &:hover {
             .article__title {
@@ -1677,5 +1687,39 @@ textarea {
 .sales {
     .sales__content {
         text-align: center;
+    }
+}
+
+.site-flashnews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    
+    .flashnews__content {
+        padding: 0 1rem;
+    }
+    
+    .link--wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: $primary;
+        transition: background-color .3s;
+        text-decoration: none;
+        
+        &:hover {
+            background-color: #9bbfdb;
+    
+            .flashnews__message {
+                color: $primary;
+            }
+        }
+    }
+    
+    .flashnews__message {
+        color: #fff;
     }
 }

@@ -2,7 +2,7 @@
 
 {% set posts = craft.entries()
 	.section('news')
-	.orderBy('dateCreated desc')
+	.orderBy('postDate desc')
 	.limit(6)
 %}
 

@@ -1,4 +1,4 @@
-dateModified: 1612430608
+dateModified: 1612512092
 email:
   fromEmail: douffetphilippe@gmail.com
   fromName: 'La Petite Merveille'
@@ -106,6 +106,10 @@ plugins:
     enabled: true
     licenseKey: A3PSWAW0FFRVPC377CENQ4TE
     schemaVersion: 1.0.21
+  phone-number:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true
