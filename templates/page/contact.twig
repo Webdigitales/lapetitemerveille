@@ -22,7 +22,13 @@
                                     <form class="form form--contact" method="post" action="" accept-charset="UTF-8" enctype="multipart/form-data">
                                         {{ csrfInput() }}
                                         <input type="hidden" name="action" value="contact-form/send">
-                                        {{ redirectInput('confirmation-contact') }}
+                                        {% if craft.app.language|slice(0,2) == 'fr' %}
+                                            {{ redirectInput('confirmation-contact') }}
+                                        {% elseif craft.app.language|slice(0,2) == 'en' %}
+                                            {{ redirectInput('/nl/contact-bevestiging') }}
+                                        {% elseif craft.app.language|slice(0,2) == 'nl' %}
+                                            {{ redirectInput('/en/contact-confirmation') }}
+                                        {% endif %}
 
                                         <div class="flex flex-wrap mb-1">
                                             <div class="w-full md:w-1/2 px-1">

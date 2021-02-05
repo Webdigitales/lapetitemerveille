@@ -23,8 +23,13 @@
                                         {{ csrfInput() }}
                                         <input type="hidden" name="action" value="contact-form/send">
                                         <input type="hidden" name="prependSubject" value="{{ entry.titre|hash }}">
-                                        {{ redirectInput('confirmation-devis') }}
-
+                                        {% if craft.app.language|slice(0,2) == 'fr' %}
+                                            {{ redirectInput('confirmation-devis') }}
+                                        {% elseif craft.app.language|slice(0,2) == 'en' %}
+                                            {{ redirectInput('/nl/devis-bevestiging') }}
+                                        {% elseif craft.app.language|slice(0,2) == 'nl' %}
+                                            {{ redirectInput('/en/devis-confirmation') }}
+                                        {% endif %}
                                         <div class="flex flex-wrap mb-1">
                                             <div class="w-full md:w-1/2 px-1">
                                                 <label class="block uppercase tracking-wide text-xs font-bold text-black mb-1" for="Firstname">
