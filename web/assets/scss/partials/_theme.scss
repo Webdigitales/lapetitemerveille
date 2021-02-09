@@ -818,7 +818,7 @@ h2 {
         list-style: none;
         
         li {
-            flex: 0 1 50%;
+            flex: 0 1 33%;
             justify-content: center;
             
             a {
@@ -826,11 +826,11 @@ h2 {
             }
             
             @media (min-width: 768px) {
-                flex: 0 1 25%;
+                flex: 0 1 20%;
             }
             
             @media (min-width: 992px) {
-                flex: 1 1 15%;
+                flex: 1 1 10%;
             }
         }
         
