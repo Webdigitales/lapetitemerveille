@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     jQuery('header nav').meanmenu({
-        meanScreenWidth: 991,
+        meanScreenWidth: 1024,
         meanMenuContainer: '.site-wrapper'
     });
 
