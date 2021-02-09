@@ -239,7 +239,7 @@
 	</footer>
 </div>
 {% set popup = craft.app.globals.getSetByHandle('popup') %}
-{% if popup|length %}
+{% if popup.texte|length %}
     <div id="cookieModal" style="display: none;" class="modal fixed w-full h-full top-0 left-0 flex items-center justify-center" data-modal="cookie_modal">
         <div class="modal-container bg-white w-11/12 md:max-w-lg mx-auto rounded shadow-lg z-50 overflow-y-auto">
             <!--Title-->
