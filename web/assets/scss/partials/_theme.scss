@@ -5,6 +5,7 @@
 $primary: #002425;
 $primary-lighter: #9BBEDB;
 $white: #fff;
+$secondary: #9bbfdb;
 
 $transition-time: .3s;
 
@@ -37,8 +38,8 @@ img {
     display: inline-block;
     
     a {
-        background-color: $primary;
-        color: #FFF;
+        background-color: $secondary;
+        color: $primary;
         display: block;
         padding: 1em 2em;
         text-transform: uppercase;
@@ -46,9 +47,11 @@ img {
         text-decoration: none;
         font-size: 0.875em;
         transition: background-color $transition-time;
+        font-weight: 600;
         
         &:hover {
-            background-color: $primary-lighter;
+            background-color: $primary;
+            color: $white;
         }
     }
     
@@ -1202,7 +1205,7 @@ h2 {
 .btn {
     &.btn-primary {
         background-color: $primary;
-        color: $white;
+        color: $primary;
         padding: .5rem 1rem;
         text-decoration: none;
         letter-spacing: .125rem;
@@ -1218,6 +1221,7 @@ h2 {
         
         &:hover {
             background-color: $primary-lighter;
+            color: $white;
         }
     }
     
@@ -1234,7 +1238,13 @@ h2 {
 
 .steps {
     padding-top: 4rem;
-    padding-bottom: 0;
+    padding-bottom: 4rem;
+    background-color: $primary;
+    margin-top: 6rem;
+    
+    .steps__title {
+        color: #fff;
+    }
     
     & + .part {
         padding-top: 6rem;
@@ -1259,23 +1269,29 @@ h2 {
         
         .step__content {
             flex: 1 1 auto;
+            color: #fff;
+            
+            p, strong {
+                color: #fff;
+            }
         }
         
         .step__number {
             font-size: 1.5rem;
             font-weight: 600;
-            color: $white;
+            color: $primary;
             border-radius: 50%;
             height: 64px;
             width: 64px;
             justify-content: center;
             align-items: center;
             display: inline-flex;
-            background-color: $primary;
+            background-color: $secondary;
         }
         
         .step__title {
             margin-bottom: 0;
+            color: #fff;
         }
         
         .step__footer {
@@ -1283,18 +1299,19 @@ h2 {
                 padding: 1rem 2rem;
                 font-size: .825rem;
                 letter-spacing: .125rem;
-                color: $white;
+                color: $primary;
                 font-weight: 600;
                 text-transform: uppercase;
                 text-decoration: none;
-                background-color: $primary;
+                background-color: $secondary;
                 margin-top: 1rem;
                 display: inline-block;
                 
                 transition: background-color $transition-time;
                 
                 &:hover {
-                    background-color: $primary-lighter;
+                    background-color: #2ea892;
+                    color: $white;
                 }
             }
         }
