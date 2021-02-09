@@ -126,10 +126,8 @@ img {
                 }
                 
                 > .nav__link {
-                    font-size: 0.875em;
-                    text-transform: uppercase;
+                    font-size: 1em;
                     text-decoration: none;
-                    letter-spacing: 0.125em;
                     display: block;
                     font-weight: 600;
                     color: $primary;
@@ -1695,6 +1693,7 @@ textarea {
     justify-content: center;
     align-items: center;
     background-color: $primary;
+    width: 100%;
     
     .flashnews__content {
         padding: 0 1rem;
