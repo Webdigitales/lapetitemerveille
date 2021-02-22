@@ -26,9 +26,9 @@
                                         {% if craft.app.language|slice(0,2) == 'fr' %}
                                             {{ redirectInput('confirmation-devis') }}
                                         {% elseif craft.app.language|slice(0,2) == 'en' %}
-                                            {{ redirectInput('/nl/devis-bevestiging') }}
+                                            {{ redirectInput('/nl/offerte-bevestiging') }}
                                         {% elseif craft.app.language|slice(0,2) == 'nl' %}
-                                            {{ redirectInput('/en/devis-confirmation') }}
+                                            {{ redirectInput('/en/offer-confirmation') }}
                                         {% endif %}
                                         <div class="flex flex-wrap mb-1">
                                             <div class="w-full md:w-1/2 px-1">
