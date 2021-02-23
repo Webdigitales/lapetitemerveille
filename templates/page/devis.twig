@@ -25,9 +25,9 @@
                                         <input type="hidden" name="prependSubject" value="{{ entry.titre|hash }}">
                                         {% if craft.app.language|slice(0,2) == 'fr' %}
                                             {{ redirectInput('confirmation-devis') }}
-                                        {% elseif craft.app.language|slice(0,2) == 'en' %}
-                                            {{ redirectInput('/nl/offerte-bevestiging') }}
                                         {% elseif craft.app.language|slice(0,2) == 'nl' %}
+                                            {{ redirectInput('/nl/offerte-bevestiging') }}
+                                        {% elseif craft.app.language|slice(0,2) == 'en' %}
                                             {{ redirectInput('/en/offer-confirmation') }}
                                         {% endif %}
                                         <div class="flex flex-wrap mb-1">

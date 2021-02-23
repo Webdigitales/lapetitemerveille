@@ -24,9 +24,9 @@
                                         <input type="hidden" name="action" value="contact-form/send">
                                         {% if craft.app.language|slice(0,2) == 'fr' %}
                                             {{ redirectInput('confirmation-contact') }}
-                                        {% elseif craft.app.language|slice(0,2) == 'en' %}
-                                            {{ redirectInput('/nl/contact-bevestiging') }}
                                         {% elseif craft.app.language|slice(0,2) == 'nl' %}
+                                            {{ redirectInput('/nl/contact-bevestiging') }}
+                                        {% elseif craft.app.language|slice(0,2) == 'en' %}
                                             {{ redirectInput('/en/contact-confirmation') }}
                                         {% endif %}
 
