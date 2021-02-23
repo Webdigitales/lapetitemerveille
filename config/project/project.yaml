@@ -1,11 +1,11 @@
-dateModified: 1612879441
+dateModified: 1614085706
 email:
   fromEmail: jtrompette@webdigitales.be
   fromName: 'La Petite Merveille'
-  replyToEmail: null
+  replyToEmail: jtrompette@webdigitales.be
   template: ''
   transportSettings:
-    command: ''
+    command: '/usr/sbin/sendmail -t'
   transportType: craft\mail\transportadapters\Sendmail
 plugins:
   admin-bar:
@@ -47,8 +47,8 @@ plugins:
     schemaVersion: 1.0.0
     settings:
       allowAttachments: ''
-      prependSender: 'De la part de'
-      prependSubject: 'New message from Site FR (principal)'
+      prependSender: 'La Petite Merveille'
+      prependSubject: 'Nouveau message sur votre site web'
       successFlashMessage: 'Votre message a été envoyé.'
       toEmail: jtrompette@webdigitales.be
   contact-form-honeypot:
