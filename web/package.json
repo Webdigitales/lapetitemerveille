@@ -19,6 +19,6 @@
     "gulp-sourcemaps": "^2.0.1"
   },
   "dependencies": {
-    "swiper": "^5.4.2"
+    "swiper": "^6.5.1"
   }
 }
