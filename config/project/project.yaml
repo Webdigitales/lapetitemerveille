@@ -1,8 +1,8 @@
-dateModified: 1614085706
+dateModified: 1614088204
 email:
-  fromEmail: jtrompette@webdigitales.be
+  fromEmail: sales@lpm.be
   fromName: 'La Petite Merveille'
-  replyToEmail: jtrompette@webdigitales.be
+  replyToEmail: sales@lpm.be
   template: ''
   transportSettings:
     command: '/usr/sbin/sendmail -t'
@@ -50,7 +50,7 @@ plugins:
       prependSender: 'La Petite Merveille'
       prependSubject: 'Nouveau message sur votre site web'
       successFlashMessage: 'Votre message a été envoyé.'
-      toEmail: jtrompette@webdigitales.be
+      toEmail: sales@lpm.be
   contact-form-honeypot:
     edition: standard
     enabled: true
