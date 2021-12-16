@@ -1,4 +1,4 @@
-dateModified: 1638967266
+dateModified: 1639586176
 email:
   fromEmail: sales@lpm.be
   fromName: 'La Petite Merveille'
@@ -116,6 +116,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  recaptcha:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      secretKey: 6LfT86QdAAAAAFT7ji9ZFxhAnzhlzQYRrUSMnLgc
+      siteKey: 6LfT86QdAAAAAJC_PB_-nWcVWgr9iGaITaPVKNNM
+      validateContactForm: '1'
   redactor:
     edition: standard
     enabled: true

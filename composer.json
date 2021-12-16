@@ -7,6 +7,7 @@
     "doublesecretagency/craft-siteswitcher": "2.2.0",
     "flipboxfactory/craft-link": "1.1.4",
     "jandh/translator": "1.1.2",
+    "matt-west/craft-recaptcha": "^1.5",
     "mikestecker/craft-videoembedder": "1.1.4",
     "nystudio107/craft-imageoptimize": "1.6.21",
     "nystudio107/craft-seomatic": "3.3.28",

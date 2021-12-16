@@ -3,6 +3,5 @@
 /vendor
 /web/node_modules
 .DS_Store
-.htaccess
 .htpasswd
 .log
