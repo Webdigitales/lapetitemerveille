@@ -1,4 +1,4 @@
-dateModified: 1614088204
+dateModified: 1638967266
 email:
   fromEmail: sales@lpm.be
   fromName: 'La Petite Merveille'
@@ -50,11 +50,13 @@ plugins:
       prependSender: 'La Petite Merveille'
       prependSubject: 'Nouveau message sur votre site web'
       successFlashMessage: 'Votre message a été envoyé.'
-      toEmail: sales@lpm.be
+      toEmail: gmonseur@webdigitales.be
   contact-form-honeypot:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+    settings:
+      honeypotParam: honeypotReCaptcha
   image-optimize:
     edition: standard
     enabled: true
